@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6EEE3"
+    android:orientation="vertical">
+
+    <project.namramuni.CustomView.CustomButton
+        android:id="@+id/btnTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/heading"
+        android:includeFontPadding="false"
+        android:text="Sankul Information"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold"
+        app:font1="@string/font1" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/loading"></include>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+                <LinearLayout
+                    android:id="@+id/lnr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <project.namramuni.CustomView.CustomTextview
+                        style="@style/shibirText1"
+                        android:textSize="@dimen/_14sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:text="Follow Us" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <ImageButton
+                            android:id="@+id/fb"
+                            style="@style/ShareButton"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_facebook_logo" />
+
+                        <ImageButton
+                            android:id="@+id/youtub"
+                            style="@style/ShareButton"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_youtube_logo" />
+
+                        <ImageButton
+                            android:id="@+id/twitter"
+                            style="@style/ShareButton"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_twitter_logo_silhouette" />
+
+                        <ImageButton
+                            android:id="@+id/in"
+                            style="@style/ShareButton"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_linkedin_logo" />
+
+                        <ImageButton
+                            android:id="@+id/insta"
+                            style="@style/ShareButton"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_instagram" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundsource"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/android_appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbarLayoutAndroidExample"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/customtoolbar"></include>
+            </LinearLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/android_appbar_layout"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <RelativeLayout
+                android:id="@+id/lnrImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.5"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.6"
+                    android:src="@color/black" />
+
+                <project.namramuni.CustomView.CustomTextview
+                    android:id="@+id/txtImageName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_30sdp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="@dimen/_2sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/song_album_screen_txt_artist_label"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp"
+                    app:font1="@string/font1" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrVideo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_180sdp">
+
+                    <ImageView
+                        android:id="@+id/imgBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.6"
+                        android:background="@color/black" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_180sdp">
+
+                        <RelativeLayout
+                            android:id="@+id/Bbtn_play_pause_id11"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/circle"
+                            android:backgroundTint="@color/white"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/Bbtn_play_id11"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="@dimen/_8sdp"
+                                android:src="@drawable/ic_play"
+                                android:tint="@color/black"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/Bbtn_pause_id11"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="@dimen/_12sdp"
+                                android:src="@drawable/ayp_ic_pause_36dp"
+                                android:tint="@color/black" />
+
+                            <LinearLayout
+                                android:id="@+id/BloadingPanel11"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/circle"
+                                android:backgroundTint="@color/white"
+                                android:gravity="center"
+                                android:padding="@dimen/_12sdp">
+
+                                <ProgressBar
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:indeterminate="true" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <SeekBar
+                            android:id="@+id/Bseek_bar_id11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/timerDisplay"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/_22sdp"
+                            android:layout_marginRight="@dimen/_22sdp"
+                            android:layout_marginBottom="@dimen/_13sdp" />
+                    </RelativeLayout>
+                    <!--   <pl.droidsonroids.gif.GifImageView
+                           android:id="@+id/audioPlay"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:padding="@dimen/_40sdp"
+                           android:src="@drawable/audiowave"/>-->
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rlvTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            android:id="@+id/txtVideoName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_40sdp"
+                            android:includeFontPadding="false"
+                            android:inputType="textMultiLine"
+                            android:lineSpacingExtra="@dimen/_2sdp"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/song_album_screen_txt_artist_label"
+                            android:textColor="@color/heading5"
+                            android:textSize="@dimen/_11sdp"
+                            app:font1="@string/font1" />
+
+                        <ImageView
+                            android:id="@+id/arrow"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/_13sdp"
+                            android:rotation="270"
+                            android:src="@drawable/ic_left_arrow" />
+                    </RelativeLayout>
+
+                    <project.namramuni.CustomView.CustomTextview
+                        android:id="@+id/txtVideoDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rlvTitle"
+                        android:includeFontPadding="false"
+                        android:inputType="textMultiLine"
+                        android:lineSpacingExtra="@dimen/_2sdp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:text="Description"
+                        android:textColor="@color/gray1"
+                        android:textSize="@dimen/_11sdp"
+                        android:visibility="gone"
+                        app:font1="@string/font1" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/lnr1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:paddingBottom="@dimen/_3sdp">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            android:id="@+id/titlelist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:inputType="textCapSentences"
+                            android:lineSpacingExtra="@dimen/_2sdp"
+                            android:padding="@dimen/_7sdp"
+                            android:text="video Playlist"
+                            android:textColor="@color/heading5"
+                            android:textSize="@dimen/_13sdp"
+                            app:font1="@string/font1" />
+
+                        <com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView
+                            android:id="@+id/rcList"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/loading"></include>
+
+                <RelativeLayout
+                    android:id="@+id/relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <project.namramuni.CustomView.CustomTextview
+                        android:id="@+id/txtRelativePost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:includeFontPadding="false"
+                        android:inputType="textMultiLine"
+                        android:lineSpacingExtra="@dimen/_2sdp"
+                        android:padding="@dimen/_8sdp"
+                        android:text="Related Video"
+                        android:textColor="@color/heading5"
+                        android:textSize="@dimen/_13sdp"
+                        app:font1="@string/font1" />
+                    <project.namramuni.CustomView.CustomTextview
+                        android:id="@+id/txtGurudevMsg"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_200sdp"
+                        android:text="No Data"
+                        android:visibility="gone"
+                        android:gravity="center"
+                        android:layout_below="@+id/txtRelativePost"></project.namramuni.CustomView.CustomTextview>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcGurudevList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/txtRelativePost"></androidx.recyclerview.widget.RecyclerView>
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_watch"
+        android:icon="@drawable/gurudevtab"
+        android:textSize="@dimen/_8sdp"
+        android:title="Watch" />
+    <item
+        android:id="@+id/navigation_read"
+        android:icon="@drawable/hometab"
+        android:textSize="@dimen/_8sdp"
+        android:title="Read" />
+    <item
+        android:id="@+id/navigation_event"
+        android:icon="@drawable/plantab"
+        android:textSize="@dimen/_8sdp"
+        android:title="Events"
+        />
+
+</menu>

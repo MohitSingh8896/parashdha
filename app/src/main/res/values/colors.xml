@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#FF9389</color>
+    <color name="colorPrimaryDark">#EE5F64</color>
+    <color name="colorAccent">#2aabe1</color>
+    <color name="colorAccent1">#fd1b32</color>
+    <color name="blue">#2aabe1</color>
+    <color name="white">#ffffff</color>
+    <color name="white1">#fcfcfc</color>
+    <color name="black">#000000</color>
+    <color name="gray1">#a2a2a2</color>
+    <color name="gray2">#f1eded</color>
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow_1">#d4d4d4</color>
+    <color name="card_shadow_2">#dddddd</color>
+    <color name="transparent2">#00000000</color>
+
+    <color name="colorcode1">#ff5a5f</color>
+    <color name="colorcode2">#49cc6e</color>
+    <color name="colorcode3">#4bcfd7</color>
+    <color name="colorcode4">#f2ae0b</color>
+    <color name="tabbackground">#E1D8CF</color>
+    <color name="colorcode5">#9756cd</color>
+    <color name="body_text_2">#8a000000</color>
+    <color name="butter_bar_light">#eee0e0e0</color>
+    <color name="body_text_1">#de000000</color>
+    <item name="transparent" type="color">#00FFFFFF</item>
+    <item name="grey" type="color">#555555</item>
+    <item name="green" type="color">#4499CC00</item>
+    <item name="darkgreen" type="color">#FF669900</item>
+    <color name="background">#dddddd</color>
+    <color name="transparent1">#00a3a0a0</color>
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#1162f9</color>
+    <color name="dot_dark_screen5">#309d1a</color>
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+        <item>@color/dot_dark_screen5</item>
+    </array>
+    <color name="teal500">#009688</color>
+    <color name="off_white">#FAFAFA</color>
+    <color name="indigo">#3F51B5</color>
+    <color name="red">#ed2121</color>
+    <color name="day_disabled_background_color">#F1F5F8</color>
+    <color name="day_disabled_text_color">#DEDEDE</color>
+    <color name="selected_day_background">#03A7E9</color>
+    <color name="current_day_of_month">#03A7E9</color>
+    <color name="weekend_color">#FF0000</color>
+
+
+    <color name="complete">#05ca8c</color>
+    <color name="daysLabelColor">#8A000000</color>
+    <color name="currentMonthDayColor">#de000000</color>
+    <color name="nextMonthDayColor">#1F000000</color>
+    <color name="disabledDialogButtonColor">#1F000000</color>
+    <color name="itemHighlightColor">#1F000000</color>
+    <color name="defaultColor">#2962FF</color>
+    <color name="sundaycolor">#fd0206</color>
+    <color name="marstercolor">#E1A21A</color>
+    <color name="marstercolorDark">#36a68a</color>
+    <color name="leavecolor">#105CAA</color>
+    <color name="bankcolor">#BCD630</color>
+    <color name="taskcolor">#d630d6</color>
+    <color name="birthdaycolor">#ecb11b</color>
+    <color name="pastcolor">#8e1929</color>
+    <color name="featurecolor">#de8935</color>
+    <color name="marstertext">#ffffff</color>
+    <color name="onesignal_bgimage_notif_title_color">#FFFF0000</color>
+    <color name="onesignal_bgimage_notif_body_color">#FF00FF00</color>
+
+
+
+    <color name="taskStatus">#ecb11b</color>
+    <color name="Bearly_go">#ba1f03</color>
+    <color name="Blate_go">#03cab0</color>
+    <color name="deselect">#BCBBBB</color>
+    <color name="titleBlack">#28231F</color>
+    <color name="backgroundsource">#F6EEE3</color>
+    <color name="gradient1">#F8F1E9</color>
+    <color name="gradient2">#DFD4C7</color>
+    <color name="gradient3">#C7B8A5</color>
+
+    <color name="heading">#f1655f</color>
+    <color name="heading0">#85d2ed</color>
+    <color name="darkred">#e75b3a</color>
+
+    <color name="heading1">#000000</color>
+    <color name="heading2">#243861</color>
+    <color name="heading3">#842828</color>
+    <color name="heading4">#462250</color>
+    <color name="heading5">#28231F</color>
+    <color name="heading6">#E1D8CF</color>
+    <color name="heading7">#61330F</color>
+
+
+</resources>

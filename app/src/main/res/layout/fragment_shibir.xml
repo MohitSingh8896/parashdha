@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6EEE3"
+    android:orientation="vertical">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:visibility="visible"
+        app:cardCornerRadius="@dimen/_5sdp">
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/imgprogressBar"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center"
+            android:padding="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/close"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/_12sdp"
+                    android:src="@drawable/ic_close_black_24dp"
+                    android:tint="@color/grey" />
+
+                <project.namramuni.CustomView.CustomTextview
+                    android:id="@+id/txtTitleName"
+                    style="@style/shibirText1"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_26sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Set Up Of Shibir" />
+
+                <project.namramuni.CustomView.CustomTextview
+                    android:id="@+id/txtDate"
+                    style="@style/shibirText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtTitleName"
+                    android:gravity="center"
+                    android:text="10th To 12th July 2019" />
+
+                <project.namramuni.CustomView.CustomTextview
+                    android:id="@+id/getshibitvenues"
+                    style="@style/shibirText3"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtDate"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="Venue" />
+
+
+                <View
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_1sdp"
+                    android:visibility="gone"
+                    android:layout_below="@+id/txtDate"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/gray1"></View>
+
+
+
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/getshibitvenues"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:stretchColumns="1">
+
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profImage"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_gravity="center"
+
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:src="@drawable/profile" />
+
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_45sdp">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            style="@style/shibirText3"
+                            android:layout_height="match_parent"
+                            android:text="Name*" />
+
+                        <project.namramuni.CustomView.CustomEditview
+                            android:id="@+id/edtName"
+                            style="@style/shibirText4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="@dimen/_45sdp">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            style="@style/shibirText3"
+                            android:layout_height="match_parent"
+                            android:text="Address*" />
+
+                        <project.namramuni.CustomView.CustomEditview
+                            android:id="@+id/edtAddress"
+                            style="@style/shibirText4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </TableRow>
+
+
+
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="@dimen/_45sdp">
+
+                        <Spinner
+                            android:id="@+id/state_spinner"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="@dimen/_45sdp">
+
+                        <Spinner
+                            android:id="@+id/city_spinner"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+
+                    </TableRow>
+
+
+
+
+
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            style="@style/shibirText3"
+                            android:layout_height="match_parent"
+                            android:text="City*" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <project.namramuni.CustomView.CustomEditview
+                                android:id="@+id/edtCity"
+                                style="@style/shibirText4"
+                                android:paddingLeft="@dimen/_10sdp"
+                                android:layout_width="@dimen/_100sdp"
+                                android:singleLine="true"
+                                android:layout_height="@dimen/_33sdp"
+                                 />
+
+                            <project.namramuni.CustomView.CustomTextview
+                                style="@style/shibirText3"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="match_parent"
+                                android:gravity="end|center"
+                                android:text="State*  " />
+
+                            <project.namramuni.CustomView.CustomEditview
+                                android:id="@+id/edtState"
+                                style="@style/shibirText4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="end" />
+
+                        </LinearLayout>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            style="@style/shibirText3"
+                            android:layout_height="match_parent"
+                            android:text="Pin Code*" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <project.namramuni.CustomView.CustomEditview
+                                android:id="@+id/edpincode"
+                                style="@style/shibirText4"
+                                android:singleLine="true"
+                                android:inputType="number"
+                                android:paddingLeft="@dimen/_10sdp"
+                                android:layout_width="@dimen/_100sdp"
+
+                                android:layout_height="@dimen/_33sdp"
+                                 />
+
+                            <project.namramuni.CustomView.CustomTextview
+                                style="@style/shibirText3"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="Mob." />
+
+                            <project.namramuni.CustomView.CustomEditview
+                                android:id="@+id/edtno"
+                                android:inputType="number"
+                                android:singleLine="true"
+                                style="@style/shibirText4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="end" />
+
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            style="@style/shibirText3"
+                            android:layout_height="match_parent"
+                            android:text="DOB*" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <project.namramuni.CustomView.CustomEditview
+                                android:id="@+id/edtDOB"
+                                style="@style/shibirText4"
+                                android:paddingLeft="@dimen/_10sdp"
+                                android:layout_width="@dimen/_100sdp"
+                                android:singleLine="true"
+                                android:layout_height="@dimen/_33sdp"
+                                android:drawableRight="@drawable/ic_calendar" />
+
+                            <project.namramuni.CustomView.CustomTextview
+                                style="@style/shibirText3"
+                                android:layout_width="@dimen/_40sdp"
+                                android:layout_height="match_parent"
+                                android:gravity="end|center"
+                                android:text="Age  " />
+
+                            <project.namramuni.CustomView.CustomEditview
+                                android:id="@+id/edtAge"
+                                style="@style/shibirText4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="end" />
+
+                        </LinearLayout>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            style="@style/shibirText3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Married" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:id="@+id/marriedYes"
+                                android:shadowColor="@color/heading"
+                                android:textSize="@dimen/_10sdp"
+                                android:layout_height="wrap_content"
+                                android:text="Yes"
+                                ></RadioButton>
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:textSize="@dimen/_10sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:shadowColor="@color/heading"
+                                android:id="@+id/marriedNo"
+                                android:layout_height="wrap_content"
+                                android:text="No"
+                                ></RadioButton>
+
+
+
+                        </LinearLayout>
+
+
+
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            style="@style/shibirText3"
+                            android:layout_height="match_parent"
+                            android:text="Occupation*" />
+
+                        <project.namramuni.CustomView.CustomEditview
+                            android:id="@+id/edtEducation"
+                            style="@style/shibirText4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            style="@style/shibirText3"
+                            android:id="@+id/txtque_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_span="2"
+                            android:text="Have you ever attended any shibir before?" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:id="@+id/msustiontab1"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <RadioButton
+                            android:shadowColor="@color/heading"
+                            android:id="@+id/checkYes"
+                            android:text="Yes"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <RadioButton
+                            android:shadowColor="@color/heading"
+                            android:id="@+id/checkNo"
+                            android:text="No"
+                            android:textSize="@dimen/_10sdp" />
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            style="@style/shibirText3"
+                            android:id="@+id/que_two"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_span="2"
+                            android:text="Do you want accommodation?"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:id="@+id/msustiontab2"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <RadioButton
+                            android:shadowColor="@color/heading"
+                            android:id="@+id/check1Yes2"
+                            android:text="Yes"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <RadioButton
+                            android:shadowColor="@color/heading"
+                            android:id="@+id/check1No2"
+                            android:text="No"
+                            android:textSize="@dimen/_10sdp" />
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            style="@style/shibirText3"
+                            android:id="@+id/editque_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_span="2"
+                            android:text="qustion3?"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:id="@+id/msustiontab3"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <RadioButton
+                            android:shadowColor="@color/heading"
+                            android:id="@+id/check1Yes3"
+                            android:text="Yes"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <RadioButton
+                            android:shadowColor="@color/heading"
+                            android:id="@+id/check1No3"
+                            android:text="No"
+                            android:textSize="@dimen/_10sdp" />
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            style="@style/shibirText3"
+                            android:id="@+id/txtqus_four"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_span="2"
+                            android:text="qustion4?"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:id="@+id/msustiontab4"
+
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <RadioButton
+                            android:shadowColor="@color/heading"
+                            android:id="@+id/check1Yes4"
+                            android:text="Yes"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <RadioButton
+                            android:shadowColor="@color/heading"
+                            android:id="@+id/check1No4"
+                            android:text="No"
+                            android:textSize="@dimen/_10sdp" />
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:id="@+id/mc_qus1_tab1"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            style="@style/shibirText3"
+                            android:id="@+id/mc_qus1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_span="2"
+                            android:text="What is the purpose of your living?*" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:id="@+id/editmc_qus1_tab1"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <project.namramuni.CustomView.CustomEditview
+                            style="@style/shibirText4"
+                            android:id="@+id/editmc_qus1"
+                            android:layout_width="match_parent"
+                            android:layout_span="2" />
+                    </TableRow>
+
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:id="@+id/mc_qus1_tab2"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            style="@style/shibirText3"
+
+                            android:id="@+id/mc_qus2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_span="2"
+                            android:text="How do you spend your leisure time?" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:id="@+id/editmc_qus1_tab2"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <project.namramuni.CustomView.CustomEditview
+                            style="@style/shibirText4"
+
+                            android:id="@+id/editmc_qus2"
+                            android:layout_width="match_parent"
+                            android:layout_span="2" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:id="@+id/mc_qus1_tab3"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            style="@style/shibirText3"
+                            android:id="@+id/mc_qus3"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_span="2"
+                            android:text="For how many years your stayed abroad and how you achieve the goal you set for yourself?"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:id="@+id/editmc_qus1_tab3"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <project.namramuni.CustomView.CustomEditview
+                            style="@style/shibirText4"
+
+                            android:id="@+id/editmc_qus3"
+                            android:layout_width="match_parent"
+                            android:layout_span="2" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:id="@+id/mc_qus1_tab4"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            style="@style/shibirText3"
+                            android:id="@+id/mc_qus4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_span="2"
+                            android:text="What is your weaknes you would like to overcome during the shibir?
+                             "/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:id="@+id/editmc_qus1_tab4"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <project.namramuni.CustomView.CustomEditview
+                            style="@style/shibirText4"
+
+                            android:id="@+id/editmc_qus4"
+                            android:layout_width="match_parent"
+                            android:layout_span="2" />
+                    </TableRow>
+
+
+
+
+
+
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:id="@+id/destab"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            style="@style/shibirText3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_span="2"
+                            android:text="What are your expectations from this shibir?*"
+                            android:textSize="@dimen/_10sdp"
+                            app:font1="@string/font1" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            style="@style/shibirText3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_span="2"
+                            android:id="@+id/description"
+                            android:text="@string/bullted_list"
+                            android:textSize="@dimen/_10sdp" />
+                    </TableRow>
+
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_20sdp">
+
+                        <project.namramuni.CustomView.CustomButton
+                            android:id="@+id/btnSubmit"
+                            style="@style/shibirText5"
+                            android:layout_width="100dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_span="2"
+                            android:gravity="center"
+                            android:background="@color/heading"
+                            android:text="submit"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/_9sdp" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/cardView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/close1"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/_12sdp"
+                android:src="@drawable/ic_close_black_24dp"
+                android:tint="@color/grey" />
+            <ImageView
+                android:layout_above="@+id/t1"
+                android:layout_centerHorizontal="true"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/check"
+                android:tint="@color/marstercolor" />
+            <project.namramuni.CustomView.CustomTextview
+                style="@style/shibirText1"
+                android:id="@+id/t1"
+                android:textColor="@color/heading5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/_20sdp"
+                android:layout_centerInParent="true"
+                android:text="Thank You" />
+
+            <project.namramuni.CustomView.CustomTextview
+                style="@style/shibirText3"
+                android:layout_below="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="Your form has been submitted" />
+
+            <View
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_below="@+id/t1"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/gray1"></View>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundsource"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/android_appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbarLayoutAndroidExample"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/customtoolbar"></include>
+            </LinearLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/android_appbar_layout"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/lnrVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <com.google.android.youtube.player.YouTubePlayerView
+                android:id="@+id/youtube_player_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout android:id="@+id/rlvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <project.namramuni.CustomView.CustomTextview
+                        android:id="@+id/txtVideoName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_40sdp"
+                        android:inputType="textMultiLine"
+                        android:padding="@dimen/_10sdp"
+                        android:text="@string/song_album_screen_txt_artist_label"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="@dimen/_2sdp"
+                        android:textColor="@color/heading5"
+                        android:textSize="@dimen/_11sdp"
+                        app:font1="@string/font1" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/_13sdp"
+                        android:rotation="270"
+                        android:id="@+id/arrow"
+                        android:src="@drawable/ic_left_arrow" />
+                </RelativeLayout>
+
+                <project.namramuni.CustomView.CustomTextview
+                    android:id="@+id/txtVideoDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="@dimen/_2sdp"
+                    android:layout_below="@+id/rlvTitle"
+                    android:inputType="textMultiLine"
+                    android:visibility="gone"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:text="Description"
+                    android:textColor="@color/gray1"
+                    android:textSize="@dimen/_11sdp"
+                    app:font1="@string/font1" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/lnrImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <ImageView
+                android:alpha="0.5"
+                android:id="@+id/image"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:alpha="0.6"
+                android:src="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <project.namramuni.CustomView.CustomTextview
+                android:id="@+id/txtImageName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/song_album_screen_txt_artist_label"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="@dimen/_2sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                app:font1="@string/font1" />
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/lnr1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:paddingBottom="@dimen/_3sdp">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            android:id="@+id/titlelist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_7sdp"
+                            app:font1="@string/font1"
+                            android:text="video Playlist"
+                            android:includeFontPadding="false"
+                            android:lineSpacingExtra="@dimen/_2sdp"
+                            android:inputType="textCapSentences"
+                            android:textColor="@color/heading5"
+                            android:textSize="@dimen/_13sdp"
+                           />
+
+                        <com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView
+                            android:id="@+id/rcList"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/loading"></include>
+
+                <RelativeLayout
+                    android:id="@+id/relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <project.namramuni.CustomView.CustomTextview
+                        android:id="@+id/txtRelativePost"
+                        android:layout_marginTop="@dimen/_7sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_8sdp"
+                        android:inputType="textMultiLine"
+                        android:text="Related Video"
+                        android:textColor="@color/heading5"
+                        android:textSize="@dimen/_13sdp"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="@dimen/_2sdp"
+                        app:font1="@string/font1" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcGurudevList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/txtRelativePost"></androidx.recyclerview.widget.RecyclerView>
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

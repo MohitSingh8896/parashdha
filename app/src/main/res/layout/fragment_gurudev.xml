@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/backgroundsource"
+    android:layout_height="match_parent">
+    <com.google.android.material.tabs.TabLayout
+        android:background="@color/heading"
+        android:id="@+id/tablayout"
+        app:tabIndicatorFullWidth="false"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:tabIndicatorColor="@color/white"
+        app:tabIndicatorHeight="@dimen/_4sdp"
+        app:tabTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp">
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabWatch"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Watch" />
+
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:id="@+id/tabListen"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/_10sdp"-->
+<!--            android:layout_marginRight="@dimen/_10sdp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Listen" />-->
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabRead"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:text="Read" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabconnect"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:text="Connect" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabEvents"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:text="Events" />
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></androidx.viewpager.widget.ViewPager>
+</LinearLayout>

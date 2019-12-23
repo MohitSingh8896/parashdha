@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context=".Fragement.FragmentLucyDraw">
+
+    <project.namramuni.CustomView.CustomTextview
+        style="@style/shibirText3"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/mgstxt"
+        android:visibility="gone"
+        android:textSize="@dimen/_15sdp"
+        android:layout_centerInParent="true"
+        android:text="There is no Lucky \nDraw at the moment">
+
+    </project.namramuni.CustomView.CustomTextview>
+
+
+
+
+    <ProgressBar
+
+        android:id="@+id/imgprogressBar"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_gravity="center"
+
+        android:padding="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp" />
+
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        >
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/cardView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:id="@+id/relyoutupdate"
+
+            android:layout_gravity="center"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginTop="@dimen/_100sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/ic_gifts"
+
+                android:id="@+id/image1"
+                android:tint="@color/black" />
+            <project.namramuni.CustomView.CustomTextview
+                style="@style/shibirText1"
+                android:id="@+id/t1"
+                android:layout_below="@+id/image1"
+                android:textColor="@color/marstercolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/_22sdp"
+                android:layout_centerInParent="true"
+                android:text="LUCKY DRAW" />
+
+            <project.namramuni.CustomView.CustomTextview
+                style="@style/shibirText1"
+                android:layout_below="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:textSize="@dimen/_12sdp"
+                android:id="@+id/fottxt"
+                android:text="For"/>
+
+            <project.namramuni.CustomView.CustomTextview
+                style="@style/shibirText1"
+                android:layout_below="@+id/fottxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:id="@+id/titlelucytxt"
+                android:text="title"/>
+
+            <project.namramuni.CustomView.CustomTextview
+                style="@style/shibirText3"
+                android:layout_below="@+id/titlelucytxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:id="@+id/text2"
+                android:text="Your Current Location" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/text2"
+                android:gravity="center"
+                android:id="@+id/ray1"
+
+                android:padding="@dimen/_10sdp"
+                android:foregroundGravity="center"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/ractangle"
+                    android:layout_height="@dimen/_30sdp"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    >
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:padding="@dimen/_1sdp"
+                        android:layout_width="@dimen/_151sdp"
+                        android:layout_height="wrap_content"
+
+                        android:spinnerMode="dropdown"
+                        android:drawSelectorOnTop="true"
+                        android:dropDownVerticalOffset="30dp"
+                        style="@style/shibirText3"
+                        android:entries="@array/acc_type" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <project.namramuni.CustomView.CustomTextview
+                style="@style/shibirText3"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:background="@drawable/ractangle1"
+                android:textColor="@color/white"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:gravity="center"
+                android:textSize="@dimen/_12sdp"
+                android:id="@+id/submit"
+
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/ray1"
+                android:text="Submit" />
+
+
+
+
+        </RelativeLayout>
+
+
+
+<!--lucy Drwa number-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:id="@+id/relativegenunver"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_marginTop="@dimen/_100sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/ic_gifts"
+                android:id="@+id/image11"
+                android:tint="@color/black" />
+
+            <project.namramuni.CustomView.CustomTextview
+                style="@style/shibirText1"
+                android:id="@+id/t11"
+                android:layout_below="@+id/image11"
+                android:textColor="@color/marstercolor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/_22sdp"
+                android:layout_centerInParent="true"
+                android:text="LUCKY DRAW" />
+
+
+            <project.namramuni.CustomView.CustomTextview
+                style="@style/shibirText1"
+                android:layout_below="@+id/t11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:textSize="@dimen/_12sdp"
+                android:id="@+id/text2111"
+                android:text="For"/>
+
+            <project.namramuni.CustomView.CustomTextview
+                style="@style/shibirText1"
+                android:layout_below="@+id/text2111"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:id="@+id/titlelucy"
+                android:text="title"/>
+
+
+            <project.namramuni.CustomView.CustomTextview
+                style="@style/shibirText3"
+                android:layout_below="@+id/titlelucy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:gravity="center"
+                android:textSize="@dimen/_12sdp"
+                android:id="@+id/text21"
+                android:text="Your Lucky Draw Number is"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/text21"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_height="wrap_content">
+
+                <project.namramuni.CustomView.CustomTextview
+                    android:id="@+id/setlucknumber"
+                    style="@style/shibirText2"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/ractangle"
+                    android:gravity="center"
+
+                    android:text=""
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
+</FrameLayout>

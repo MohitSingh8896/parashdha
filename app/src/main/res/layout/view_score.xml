@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <project.namramuni.CustomView.CustomTextview
+        android:includeFontPadding="false"
+        app:font1="@string/font2"
+        android:textColor="@color/heading1"
+        android:padding="@dimen/_8sdp"
+        android:textSize="@dimen/_13sdp"
+        android:text="50"
+        android:id="@+id/txtrank"
+        android:layout_centerVertical="true"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="wrap_content" />
+
+
+    <project.namramuni.CustomView.CustomTextview
+        android:includeFontPadding="false"
+        app:font1="@string/font2"
+        android:layout_toEndOf="@+id/txtrank"
+        android:textColor="@color/heading1"
+        android:padding="@dimen/_8sdp"
+        android:textSize="@dimen/_13sdp"
+        android:singleLine="true"
+        android:text="Mohit Singh "
+        android:id="@+id/txtTitle"
+        android:layout_toRightOf="@+id/txtScore"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <project.namramuni.CustomView.CustomTextview
+        android:includeFontPadding="false"
+        app:font1="@string/font2"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/heading1"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/_5sdp"
+        android:textSize="@dimen/_13sdp"
+
+        android:text="20"
+        android:id="@+id/txtScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/viewline"
+        android:background="@color/heading1"></View>
+
+</RelativeLayout>

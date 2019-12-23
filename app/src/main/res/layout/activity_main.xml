@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcSearchList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <FrameLayout
+            android:id="@+id/main_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/lnrBotton"
+            android:layout_below="@+id/toolbar"
+            android:background="@color/white"
+            android:orientation="vertical" />
+
+        <FrameLayout
+            android:id="@+id/main_fragment1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/lnrBotton"
+            android:layout_below="@+id/toolbar"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/lnrBotton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/shilpamini_player_new"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_above="@+id/bnve_no_shifting_mode"
+                android:background="@color/colorAccent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/shilpamini_media_player"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/shilpaplay_song_img"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/logo" />
+                    <LinearLayout
+                        android:id="@+id/titleLenear"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/rlv"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_toRightOf="@+id/shilpaplay_song_img"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/shilpasong_playing_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="#1c1c1c"
+                            android:textSize="10.5sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlv"
+                        android:layout_width="@dimen/_32sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/_16sdp">
+
+                        <ImageView
+                            android:id="@+id/shilpaplay_button_song_imageview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/_7sdp"
+                            android:src="@android:drawable/ic_media_play"
+                            android:tint="@color/black"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/shilpapause_button_song_imageview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/_7sdp"
+                            android:tint="@color/black"
+                            android:src="@@android:drawable/ic_media_pause" />
+                        <RelativeLayout
+                            android:background="@color/white"
+                            android:id="@+id/shilpaloadingPanel"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center" >
+                            <ProgressBar
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="0dp"
+                                android:indeterminate="true" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                    <ProgressBar
+                        android:padding="@dimen/_8sdp"
+                        android:id="@+id/pBar"
+                        android:visibility="gone"
+                        style="?android:attr/progressBarStyleLarge"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:progress="0"></ProgressBar>
+                </RelativeLayout>
+                <ProgressBar
+                    android:id="@+id/shilpaplay_audio_in_progressbar"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_8sdp"
+                    android:max="100"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <com.stfalcon.bottomtablayout.BottomTabLayout
+                android:id="@+id/navigation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:background="@color/titleBlack"
+                android:elevation="40dp"
+                android:padding="@dimen/_5sdp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/slideView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/screen_background_light_transparent"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="0dp"
+        android:fitsSystemWindows="true"
+        android:clickable="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+        <include layout="@layout/current_playing_song"></include>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

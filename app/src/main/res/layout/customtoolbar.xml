@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/white"
+        android:elevation="6dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/back"
+                android:src="@drawable/ic_left_arrow"
+                android:paddingRight="@dimen/_33sdp"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="match_parent" />
+            <project.namramuni.CustomView.CustomTextview
+                android:id="@+id/txttitle"
+                android:layout_marginTop="@dimen/_6sdp"
+                app:font1="@string/font1"
+                android:includeFontPadding="false"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:text="Namramuni"
+                android:textColor="@color/titleBlack"
+                android:textSize="@dimen/_17sdp" />
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:id="@+id/share"
+                android:src="@drawable/ic_share"
+                android:padding="@dimen/_15sdp"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+</FrameLayout>

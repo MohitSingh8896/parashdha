@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="YOURSTYLE" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="popupMenuStyle">@style/PopupMenu</item>
+    </style>
+
+    <style name="PopupMenu" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:popupBackground">@color/white</item>
+    </style>
+
+    <style name="TabButtonTextStyle" parent="android:Widget.Button">
+        <item name="font1">@string/font1</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:lineSpacingExtra">@dimen/_2sdp</item>
+        <item name="android:padding">2sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@drawable/selector</item>
+    </style>
+
+    <style name="TabButtonTextStyle2" parent="android:Widget.Button">
+        <item name="android:lineSpacingExtra">@dimen/_2sdp</item>
+        <item name="font1">@string/font1</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TabButtonTextStyle4" parent="android:Widget.TextView">
+        <item name="android:includeFontPadding">false</item>
+        <item name="font1">@string/font1</item>
+        <item name="android:lineSpacingExtra">@dimen/_2sdp</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/heading1</item>
+    </style>
+
+    <style name="TabButtonTextStyle1" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="font1">@string/font1</item>
+        <item name="android:lineSpacingExtra">@dimen/_2sdp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/heading1</item>
+    </style>
+
+    <style name="TextStyle1" parent="android:Widget.TextView">
+        <item name="android:textAllCaps" tools:ignore="DuplicateDefinition">true</item>
+        <item name="android:lineSpacingExtra">@dimen/_2sdp</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextStyle2" parent="android:Widget.TextView">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:lineSpacingExtra">@dimen/_2sdp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MaterialSearchViewStyle" parent="android:Widget.Material.SearchView">
+        <!-- Change text color for edit text. This will also be the color of the cursor -->
+        <item name="android:textColor">@color/black</item>
+        <!-- Change hint text color for edit text -->
+        <item name="android:textColorHint">@color/grey</item>
+    </style>
+
+    <style name="homeText" parent="android:Widget.TextView">
+        <item name="font1">@string/font1</item>
+        <item name="android:layout_margin">@dimen/_5sdp</item>
+        <item name="android:lineSpacingExtra">@dimen/_2sdp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">@dimen/_11sdp</item>
+        <item name="android:textColor">@color/heading1</item>
+    </style>
+    <style name="homeText1" parent="android:Widget.TextView">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_2sdp</item>
+        <item name="font1">@string/font1</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/heading1</item>
+    </style>
+    <style name="homeText2" parent="android:Widget.TextView">
+        <item name="font1">@string/font2</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_2sdp</item>
+        <item name="justify">true</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+    <style name="homeViewAll" parent="android:Widget.TextView">
+        <item name="font1">@string/font3</item>
+        <item name="android:background">@drawable/read2</item>
+        <item name="android:textSize">@dimen/_8sdp</item>
+        <item name="android:text">View All</item>
+        <item name="android:lineSpacingExtra">@dimen/_2sdp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+      <!--  <item name="android:paddingLeft">@dimen/_7sdp</item>
+        <item name="android:paddingRight">@dimen/_3sdp</item>
+        <item name="android:paddingTop">@dimen/_7sdp</item>
+        <item name="android:paddingBottom">@dimen/_3sdp</item>-->
+    </style>
+    <style name="shibirText1" parent="android:Widget.TextView">
+        <item name="font1">@string/font1</item>
+        <item name="android:lineSpacingExtra">@dimen/_2sdp</item>
+        <item name="android:layout_marginTop">@dimen/_10sdp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:textColor">@color/heading1</item>
+    </style>
+
+    <style name="shibirText2" parent="android:Widget.TextView">
+        <item name="android:includeFontPadding">false</item>
+        <item name="font1">@string/font1</item>
+        <item name="android:lineSpacingExtra">@dimen/_2sdp</item>
+        <item name="android:layout_marginTop">@dimen/_5sdp</item>
+        <item name="android:layout_marginBottom">@dimen/_5sdp</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/heading1</item>
+    </style>
+    <style name="shibirText3" parent="android:Widget.TextView">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_2sdp</item>
+        <item name="font1">@string/font2</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:layout_width">@dimen/_70sdp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/heading5</item>
+    </style>
+
+    <style name="shibirText4" parent="android:Widget.EditText">
+        <item name="font1">@string/font2</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:background">@drawable/border</item>
+        <item name="android:textCursorDrawable">@drawable/corsor</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_2sdp</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/heading1</item>
+    </style>
+
+   <style name="shibirText5" parent="android:Widget.Button">
+        <item name="font1">@string/font1</item>
+       <item name="android:lineSpacingExtra">@dimen/_2sdp</item>
+       <item name="android:background">@color/heading</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+       <item name="android:includeFontPadding">false</item>
+       <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="myprofileText1" parent="android:Widget.EditText">
+        <item name="font1">@string/font2</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_height">@dimen/_35sdp</item>
+        <item name="android:layout_marginLeft">@dimen/_15sdp</item>
+        <item name="android:layout_marginRight">@dimen/_15sdp</item>
+        <item name="android:textCursorDrawable">@drawable/corsor</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">@dimen/_2sdp</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="android:background">@drawable/border1</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/heading1</item>
+    </style>
+
+    <style name="ShareButton" parent="android:Widget.ImageButton">
+        <item name="android:tint">@color/gray1</item>
+        <item name="android:lineSpacingExtra">@dimen/_2sdp</item>
+        <item name="android:layout_height">@dimen/_50sdp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:layout_width">@dimen/_50sdp</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="OtpText" parent="Base.V7.Widget.AppCompat.EditText">
+        <item name="font1">@string/font1</item>
+        <item name="android:textColor">@color/marstercolor</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:background">@drawable/border</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:textCursorDrawable">@drawable/corsor</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:backgroundTint">#F6EEE3</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">number</item>
+        <!--<item name="android:paddingTop">@dimen/_5sdp</item>-->
+        <item name="android:layout_marginLeft">@dimen/_3sdp</item>
+        <item name="android:layout_marginRight">@dimen/_3sdp</item>
+    </style>
+
+</resources>

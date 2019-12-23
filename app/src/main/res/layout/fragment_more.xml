@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/backgroundsource"
+    android:layout_height="match_parent">
+    <project.namramuni.CustomView.CustomButton
+        app:font1="@string/font1"
+        android:id="@+id/btnTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:text="More"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:textColor="@color/white"
+        android:background="@color/heading"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

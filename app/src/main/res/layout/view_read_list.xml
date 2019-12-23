@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?><!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="vertical"--><!--android:layout_marginRight="@dimen/_10sdp">-->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_7sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginRight="@dimen/_7sdp"
+    android:layout_marginBottom="@dimen/_5sdp">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/imgImage"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_95sdp">
+
+            <ImageView
+                android:id="@+id/imgBook"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:indeterminateTint="@color/heading"
+                android:padding="@dimen/_25sdp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imgImage"
+            android:orientation="vertical">
+
+            <project.namramuni.CustomView.CustomTextview
+                android:id="@+id/textTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="@string/app_name"
+                android:textColor="@color/heading1"
+                android:textSize="@dimen/_12sdp"
+                app:font1="@string/font1" />
+
+            <project.namramuni.CustomView.CustomTextview
+                android:id="@+id/textSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="@string/app_name"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_12sdp"
+                app:font1="@string/font1" />
+
+            <project.namramuni.CustomView.CustomTextview
+                android:id="@+id/textAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:includeFontPadding="false"
+                android:text="@string/app_name"
+                android:textSize="@dimen/_10sdp"
+                app:font1="@string/font1" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

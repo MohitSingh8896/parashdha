@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F6EEE3"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginActivity">
+
+    <project.namramuni.CustomView.CustomButton
+        android:includeFontPadding="false"
+        android:id="@+id/btnTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/heading"
+        android:text="Registration"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold"
+        app:font1="@string/font1"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F6EEE3"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profImage"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:src="@drawable/profile" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <project.namramuni.CustomView.CustomEditview
+                    android:id="@+id/edtFName"
+                    style="@style/myprofileText1"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+
+                    android:hint="Name" />
+
+
+            </LinearLayout>
+
+            <project.namramuni.CustomView.CustomEditview
+                android:id="@+id/edtEmail"
+                style="@style/myprofileText1"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:hint="Email ID" />
+            <project.namramuni.CustomView.CustomEditview
+                android:id="@+id/edtCountryName"
+                style="@style/myprofileText1"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:editable="false"
+                android:hint="Country Name" />
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.rilixtech.CountryCodePicker
+                    android:id="@+id/edtCountry"
+                    android:layout_width="@dimen/_250sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    app:ccp_defaultNameCode="IN"
+                    android:background="@drawable/border1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border1">
+
+                    <project.namramuni.CustomView.CustomTextview
+                        android:id="@+id/edtcode"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/_0sdp"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        android:gravity="center" />
+
+                    <project.namramuni.CustomView.CustomEditview
+                        android:id="@+id/edtMobile"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:background="@null"
+                        android:hint="Mobile Number"
+                        android:textSize="@dimen/_10sdp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <project.namramuni.CustomView.CustomEditview
+                android:id="@+id/edtAddress"
+                style="@style/myprofileText1"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:hint="Building Name, Lane, Area*" />
+
+            <project.namramuni.CustomView.CustomEditview
+                android:id="@+id/edtCity"
+                style="@style/myprofileText1"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:hint="City" />
+
+            <project.namramuni.CustomView.CustomEditview
+                android:id="@+id/edtState"
+                style="@style/myprofileText1"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:hint="State" />
+
+            <project.namramuni.CustomView.CustomEditview
+                android:id="@+id/edtPincode"
+                style="@style/myprofileText1"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="Pincode" />
+
+            <project.namramuni.CustomView.CustomButton
+                android:includeFontPadding="false"
+                app:font1="@string/font1"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:background="@color/heading"
+                android:text="Registration"
+                android:id="@+id/edit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

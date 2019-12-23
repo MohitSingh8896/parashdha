@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "591575174532",
+    "firebase_url": "https://namramuni.firebaseio.com",
+    "project_id": "namramuni",
+    "storage_bucket": "namramuni.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591575174532:android:7d01eb8b41adae599a21d1",
+        "android_client_info": {
+          "package_name": "project.namramuni"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591575174532-j7cbk0f43si0bfn9vknrv2fk2vbpf7mf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbxDDz8BPw_BiMyh4IDOJ5wemkcG4rAxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591575174532-j7cbk0f43si0bfn9vknrv2fk2vbpf7mf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

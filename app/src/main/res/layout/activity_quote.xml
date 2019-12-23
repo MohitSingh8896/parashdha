@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundsource"
+    android:orientation="vertical">
+
+    <include layout="@layout/customtoolbar"></include>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_180sdp"
+                    android:scaleType="fitXY" />
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/lnrView"
+                    android:background="@drawable/border"
+                    android:padding="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:tint="@color/black"
+                        android:src="@android:drawable/ic_menu_view" />
+                    <project.namramuni.CustomView.CustomTextview
+                        android:id="@+id/txtViewCount"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:padding="@dimen/_8sdp"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="@dimen/_2sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:id="@+id/imgq1"
+                android:visibility="gone"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_quotation_marks" />
+            <project.namramuni.CustomView.CustomTextview
+                android:id="@+id/titleMainHeading"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:gravity="center"
+                android:layout_toLeftOf="@+id/img1"
+                android:layout_toRightOf="@+id/img"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="@dimen/_2sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+            <project.namramuni.CustomView.CustomTextview
+                android:id="@+id/titleHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_toLeftOf="@+id/img1"
+                android:layout_toRightOf="@+id/img"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="@dimen/_2sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+
+            <ImageView
+                android:id="@+id/imgq2"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:visibility="gone"
+                android:rotation="180"
+                android:src="@drawable/ic_quotation_marks" />
+
+            <project.namramuni.CustomView.CustomTextview
+                android:id="@+id/signature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/_30sdp"
+                android:layout_toLeftOf="@+id/img1"
+                android:layout_toRightOf="@+id/img"
+                android:gravity="center"
+                android:text="Namramuni"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/rlvLoad1"
+    android:visibility="gone"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:indeterminateTint="@color/heading0"
+        android:id="@+id/progressBar1"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/lnrNonet1"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/setImage1"
+            android:src="@drawable/noconncetion"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_100sdp" />
+        <project.namramuni.CustomView.CustomTextview
+            android:includeFontPadding="false"
+            app:font1="@string/font1"
+            android:id="@+id/txtNoInternetTitle1"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="center"
+            android:text="Opps, your connection seems off"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <project.namramuni.CustomView.CustomTextview
+            android:includeFontPadding="false"
+            app:font1="@string/font1"
+            android:id="@+id/txtNoInternetSubTitle1"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/_10sdp"
+            android:gravity="center"
+            android:padding="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:text="Keep calm, light a fire and pull to refresh to try again"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>

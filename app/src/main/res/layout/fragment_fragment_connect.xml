@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundsource"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btntitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/heading"
+        android:text="Playlist"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/lnr1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_margin="@dimen/_7sdp"
+        android:orientation="horizontal"
+
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:id="@+id/rlvIntro"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_weight="1"
+            android:background="@drawable/read1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgIntro"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:src="@drawable/ic_meditationintro"
+                android:tint="@color/white"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/_10sdp" />
+
+            <project.namramuni.CustomView.CustomTextview
+                android:id="@+id/txtIntro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:includeFontPadding="false"
+                android:text="Intro"
+                android:textColor="@color/white"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_10sdp"
+                app:font1="@string/font1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlvMeditate"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/read2"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/ic_meditationmedi"
+                android:tint="@color/heading"
+                android:id="@+id/imgMeditation"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/_10sdp" />
+
+            <project.namramuni.CustomView.CustomTextview
+                android:id="@+id/txtMeditation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Meditate"
+                android:textColor="@color/heading"
+                android:includeFontPadding="false"
+                android:padding="@dimen/_5sdp"
+                android:textSize="@dimen/_10sdp"
+                app:font1="@string/font1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlvBenefits"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_weight="1"
+            android:background="@drawable/read2"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/ic_meditation"
+                android:tint="@color/heading"
+                android:id="@+id/imgBenefit"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/_10sdp" />
+
+
+            <project.namramuni.CustomView.CustomTextview
+                android:id="@+id/txtBenefit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Benefits"
+                android:textColor="@color/heading"
+                android:includeFontPadding="false"
+                android:padding="@dimen/_5sdp"
+                android:textSize="@dimen/_10sdp"
+                app:font1="@string/font1" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@+id/lnr1">-->
+<!--        <include layout="@layout/loading"></include>-->
+
+
+<!--    </LinearLayout>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/lnr1"
+        android:layout_height="match_parent">
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+
+                android:id="@+id/relative1"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/img1"
+                    android:scaleType="fitXY"
+                    android:layout_height="@dimen/_200sdp"
+                    android:src="@drawable/test"
+                    >
+
+                </ImageView>
+
+            <project.namramuni.CustomView.CustomTextview
+                android:id="@+id/txtone"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_below="@+id/img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:includeFontPadding="false"
+                style="@style/shibirText3"
+                android:text="Meditate Now"
+                android:background="@color/taskStatus"
+                android:textColor="@color/white"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textSize="@dimen/_10sdp"
+                app:font1="@string/font1" />
+
+
+
+
+            <project.namramuni.CustomView.CustomTextview
+                style="@style/shibirText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:includeFontPadding="false"
+                android:text="@string/introcontect"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:lineSpacingExtra="8dp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_below="@+id/txtone"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                app:font1="@string/font2" />
+
+            </RelativeLayout>
+
+<!--            meditation-->
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/img2"
+                    android:scaleType="fitXY"
+                    android:layout_height="@dimen/_200sdp"
+                    android:src="@drawable/test"
+                    >
+                </ImageView>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/line1"
+                    android:background="@color/featurecolor"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/img2"
+                    android:layout_height="@dimen/_35sdp">
+
+                    <project.namramuni.CustomView.CustomTextview
+                        style="@style/shibirText3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="false"
+                        android:includeFontPadding="false"
+                        android:text="Download Audio|9.20 MB"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:lineSpacingExtra="8dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:id="@+id/txt1"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_13sdp"
+                        app:font1="@string/font4" />
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:id="@+id/imgdownload"
+                        android:layout_toLeftOf="@+id/txt1"
+                        android:tint="@color/white"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_alignParentRight="true"
+
+                        android:src="@drawable/ic_download"
+                        >
+                    </ImageView>
+
+                </RelativeLayout>
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@id/reminderrelative1"
+
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_below="@+id/line1"
+                    android:layout_height="wrap_content">
+
+                    <project.namramuni.CustomView.CustomTextview
+                        style="@style/shibirText3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="false"
+                        android:includeFontPadding="false"
+                        android:text="Reminder me for Gurudev presence"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:id="@+id/txtgurudev"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_10sdp"
+                        app:font1="@string/font2" />
+
+
+                    <project.namramuni.CustomView.CustomTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_toLeftOf="@+id/txtgurudev"
+                        android:tint="@color/white"
+                        app:font1="@string/font2"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_alignParentRight="true"
+                        android:text="7 Min"
+                        >
+                    </project.namramuni.CustomView.CustomTextview>
+
+                </RelativeLayout>
+                <View
+                    android:layout_below="@+id/reminderrelative1"
+                    android:layout_width="match_parent"
+                    android:id="@+id/vi1"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@color/gradient2"
+                    android:layout_height="@dimen/_1sdp">
+
+                </View>
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@id/reminderrelative2"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/vi1"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:layout_height="wrap_content">
+
+                    <project.namramuni.CustomView.CustomTextview
+                        style="@style/shibirText3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="false"
+                        android:includeFontPadding="false"
+                        android:text="Reminder me at"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+
+                        android:id="@+id/remindertxt1"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_10sdp"
+                        app:font1="@string/font2" />
+
+
+                    <project.namramuni.CustomView.CustomTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_toLeftOf="@+id/remindertxt1"
+                        android:tint="@color/white"
+                        app:font1="@string/font2"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_alignParentRight="true"
+                        android:text="7 Min"
+                        >
+                    </project.namramuni.CustomView.CustomTextview>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_below="@+id/reminderrelative2"
+                    android:layout_width="match_parent"
+                    android:id="@+id/vi2"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@color/gradient2"
+                    android:layout_height="@dimen/_1sdp">
+
+                </View>
+
+
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@id/reninderreay"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/vi2"
+                    android:layout_height="wrap_content">
+
+                    <project.namramuni.CustomView.CustomTextview
+                        style="@style/shibirText3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="false"
+                        android:includeFontPadding="false"
+                        android:text="Reminder me about meditation before:"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:lineSpacingExtra="8dp"
+                        android:id="@+id/remindertxt"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_10sdp"
+                        app:font1="@string/font2" />
+
+
+                    <project.namramuni.CustomView.CustomTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_toLeftOf="@+id/remindertxt"
+                        android:tint="@color/white"
+                        app:font1="@string/font2"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_alignParentRight="true"
+                        android:text="5 Min"
+                        >
+                    </project.namramuni.CustomView.CustomTextview>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_below="@+id/reninderreay"
+                    android:layout_width="match_parent"
+                    android:id="@+id/vi3"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:background="@color/gradient2"
+                    android:layout_height="@dimen/_1sdp">
+                </View>
+
+
+
+
+
+                <project.namramuni.CustomView.CustomTextview
+                    style="@style/shibirText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="false"
+                    android:includeFontPadding="false"
+                    android:text="Instruction"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:lineSpacingExtra="8dp"
+                    android:id="@+id/introtxt"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/vi3"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_13sdp"
+                    app:font1="@string/font4" />
+
+
+                <project.namramuni.CustomView.CustomTextview
+                    style="@style/shibirText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:includeFontPadding="false"
+                    android:text="@string/introcontect"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:lineSpacingExtra="8dp"
+                    android:layout_marginTop="@dimen/_0sdp"
+                    android:layout_below="@+id/introtxt"
+                    android:padding="@dimen/_10sdp"
+                    android:textSize="@dimen/_13sdp"
+                    app:font1="@string/font2" />
+            </RelativeLayout>
+
+<!--          benefits-->
+            <RelativeLayout
+                android:id="@+id/relative3"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                >
+                <project.namramuni.CustomView.CustomTextview
+                    style="@style/shibirText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:includeFontPadding="false"
+                    android:text="@string/introcontect"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:lineSpacingExtra="8dp"
+                    android:layout_marginTop="@dimen/_0sdp"
+
+                    android:padding="@dimen/_10sdp"
+                    android:textSize="@dimen/_13sdp"
+                    app:font1="@string/font2" />
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

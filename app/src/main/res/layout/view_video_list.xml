@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_120sdp"
+    android:layout_marginLeft="@dimen/_8sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_3sdp">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.youtube.player.YouTubeThumbnailView
+                    android:id="@+id/videoImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/imgVideoAlbum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/txtTitle"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:layout_width="@dimen/_21sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:alpha="0.5"
+                    android:id="@+id/imgcount"
+                    android:background="@drawable/bgshap1"
+                    android:text="10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_7sdp" />
+
+                <project.namramuni.CustomView.CustomTextview
+                    android:id="@+id/timeDuration"
+                    android:layout_width="@dimen/_21sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:includeFontPadding="false"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_8sdp"
+                    app:font1="@string/font1" />
+
+                <project.namramuni.CustomView.CustomTextview
+                    android:id="@+id/txtTitle"
+                    style="@style/homeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_38sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:gravity="center"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:padding="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_3sdp"
+                    android:paddingRight="@dimen/_3sdp"
+                    android:paddingBottom="@dimen/_5sdp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/space"
+        android:layout_width="4dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:orientation="vertical"
+        android:visibility="gone"></LinearLayout>
+</RelativeLayout>

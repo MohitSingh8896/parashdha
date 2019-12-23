@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/hometab"
+        android:textSize="@dimen/_8sdp"
+        android:title="Home" />
+    <item
+        android:id="@+id/navigation_gurudev"
+        android:icon="@drawable/gurudevtab"
+        android:textSize="@dimen/_8sdp"
+        android:title="Gurudev" />
+    <item
+        android:id="@+id/navigation_punyabnk"
+        android:icon="@drawable/plantab"
+        android:textSize="@dimen/_8sdp"
+        android:title="Punya Bank"
+        />
+<!--    <item-->
+<!--        android:id="@+id/navigation_donate"-->
+<!--        android:icon="@drawable/donatab"-->
+<!--        android:textSize="@dimen/_8sdp"-->
+<!--        android:title="Donate" />-->
+    <item
+        android:id="@+id/navigation_picture"
+        android:textSize="@dimen/_8sdp"
+        android:icon="@drawable/picturetab"
+        android:title="Photos" />
+    <item
+        android:id="@+id/navigation_setting"
+        android:icon="@drawable/moretab"
+        android:textSize="@dimen/_8sdp"
+        android:title="More" />
+</menu>

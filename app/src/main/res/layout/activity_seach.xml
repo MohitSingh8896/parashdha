@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".Activity.ActivitySeach">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:id="@+id/ray1"
+    android:background="#F6EEE3"
+    android:layout_height="wrap_content">
+
+
+
+        <ImageView
+                android:id="@+id/img"
+                android:src="@drawable/ic_left_arrow"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:scaleType="fitXY"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="@dimen/_20sdp">
+        </ImageView>
+
+
+        <project.namramuni.CustomView.CustomEditview
+            android:id="@+id/searchedit"
+            style="@style/myprofileText1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:hint="Seach key"
+            android:layout_toLeftOf="@+id/seachbutton"
+            android:layout_toRightOf="@+id/img"
+            android:singleLine="true">
+
+        </project.namramuni.CustomView.CustomEditview>
+
+        <project.namramuni.CustomView.CustomButton
+            android:layout_width="wrap_content"
+            android:text="Seach"
+
+            android:background="@color/heading"
+            android:textAllCaps="false"
+            android:layout_margin="@dimen/_8sdp"
+            android:textColor="@android:color/white"
+            android:layout_alignParentRight="true"
+            android:id="@+id/seachbutton"
+            android:layout_height="@dimen/_35sdp">
+
+        </project.namramuni.CustomView.CustomButton>
+
+</RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recyclerSearch"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_below="@+id/ray1"
+        android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+</RelativeLayout>

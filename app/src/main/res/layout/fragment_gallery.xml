@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundsource"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rln"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/heading">
+
+        <project.namramuni.CustomView.CustomButton
+            android:id="@+id/btnTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            android:text="Gallery"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            app:font1="@string/font1" />
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_14sdp"
+            android:src="@drawable/ic_left_arrow"
+            android:tint="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rln">
+
+        <include layout="@layout/loading"></include>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rln">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcGalleryList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:visibility="gone"></androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcGalleryList1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:visibility="gone"></androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone">
+
+        </androidx.viewpager.widget.ViewPager>
+    </RelativeLayout>
+</RelativeLayout>

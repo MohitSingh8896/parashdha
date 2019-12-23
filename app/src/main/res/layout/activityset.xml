@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/_20sdp"
+    android:paddingLeft="@dimen/_25sdp"
+    android:paddingRight="@dimen/_25sdp"
+    android:gravity="center_horizontal">
+    <TextView
+        android:id="@+id/activityTitle"
+        android:textStyle="bold"
+        android:textColor="@color/heading7"
+        android:textSize="@dimen/_15sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/textHeading"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:textColor="@color/heading1"
+        android:textSize="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:src="@drawable/decorative"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_7sdp" />
+    <!--   <TextView
+          android:textStyle="bold"
+          android:textColor="@color/heading7"
+          android:textSize="@dimen/_15sdp"
+          android:text="Meaning"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+     <TextView
+          android:layout_marginTop="@dimen/_5sdp"
+          android:gravity="center"
+          android:textColor="@color/heading1"
+          android:textSize="@dimen/_10sdp"
+          android:text="વિસ્તર જેવા શબ્દો ક્યાં છે,\nઆગમ અપરા હૈ કહન હૈ કેટલા છે\nબોલબેસન ના મક્સુદ ચુપ ભી જેવા,\nભાષણ હેતુ બોલો.\nનંકરપુરા ધોધ મોટા થયા છે,\nતાંતૈન જૈતુ કરજ નારાના ભાલુ તાત્નૌ\nસિદ્ધ પરિમાટોકો યોગ એક્સપર્ટાઇઝ,\nઆ મોખ-પંથ પરમથ ​​હૈ ઇતાનુ છે .."
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+      <TextView
+          android:layout_marginTop="@dimen/_5sdp"
+          android:gravity="center"
+          android:textColor="@color/heading1"
+          android:textSize="@dimen/_10sdp"
+          android:text="आचारज कहैं जिन वचनकौ विसतार,\nअगम अपार है कहैंगे हम कितनौ।\nबहुत बोलिबेसौं न मकसूद चुप्प भली, बोलिये सुवचन प्रयोजन है जितनौ।।\nनानारूप जलपसौं नाना विकलप उठैं,\nतातैं जेतौ कारज कथन भलौ तितनौ।\nसुद्ध परमातमाकौ अनुभौ अभ्यास कीजै,\nयहै मोख–पंथ परमारथ है इतनौ।। १२५।।"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />-->
+    <ImageView
+        android:id="@+id/imgAudio"
+        android:src="@drawable/ic_audio"
+        android:padding="@dimen/_15sdp"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp" />
+    <pl.droidsonroids.gif.GifImageView
+        android:visibility="gone"
+        android:src="@drawable/audiowave"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:id="@+id/audioPlay" />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radioComplete"
+            android:checked="true"
+            android:buttonTint="@color/black"
+            android:text="Completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/radioNotComplete"
+            android:buttonTint="@color/black"
+            android:checked="false"
+            android:text="Not Completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/read1"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_30sdp" />
+    <project.namramuni.CustomView.CustomTextview
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/heading1"
+        android:textSize="@dimen/_12sdp"
+        android:id="@+id/txtCompleteMsg"
+        android:text="Your activity has been completed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

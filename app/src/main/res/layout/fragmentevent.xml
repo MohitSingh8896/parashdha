@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundsource"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/lnr1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/rlvEvent"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_weight="1"
+            android:background="@drawable/read1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/ic_event"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:id="@+id/imgEvent"
+                android:tint="@color/white"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/_15sdp" />
+
+            <project.namramuni.CustomView.CustomTextview
+                android:id="@+id/txtEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:includeFontPadding="false"
+                android:padding="@dimen/_10sdp"
+                android:text="Schedule"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                app:font1="@string/font1" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlvShibir"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/read2"
+            android:orientation="vertical">
+
+            <ImageView
+                android:tint="@color/heading"
+                android:src="@drawable/ic_tent"
+                android:id="@+id/imgShibir"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/_8sdp" />
+
+            <project.namramuni.CustomView.CustomTextview
+                android:id="@+id/txtShibir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:padding="@dimen/_10sdp"
+                android:text="Shibir"
+                android:textColor="@color/heading"
+                android:textSize="@dimen/_12sdp"
+                app:font1="@string/font1" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lnr1">
+
+        <include layout="@layout/loading"></include>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lnr1">
+        <project.namramuni.CustomView.CustomTextview
+            android:id="@+id/txtNoData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+
+            android:text="Coming soon"
+            android:includeFontPadding="false"
+            android:textColor="@color/heading"
+            android:textSize="@dimen/_15sdp"
+            app:font1="@string/font1" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcGurudevList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+
+    <include layout="@layout/pdfviewer"></include>
+</RelativeLayout>

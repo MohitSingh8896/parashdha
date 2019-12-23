@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/loading"></include>
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp">
+
+                    <project.namramuni.CustomView.CustomTextview
+                        android:id="@+id/txtQuote"
+                        style="@style/TextStyle1"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:text="Quotes"
+                        android:textColor="@color/darkred"
+                        app:font1="@string/font4" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_65sdp"
+                        android:layout_below="@+id/txtQuote"
+                        android:background="@drawable/qbanner"
+                        android:scaleType="fitXY" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtQuote" >
+
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/viewPagerHeading"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_65sdp"
+                            android:background="@null" />
+
+                        <ImageView
+                            android:id="@+id/img2"
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:padding="@dimen/_13sdp"
+                            android:src="@drawable/ic_left_arrow"
+                            android:tint="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/_13sdp"
+                            android:rotation="180"
+                            android:src="@drawable/ic_left_arrow"
+                            android:tint="@color/white" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:visibility="gone">
+
+                    <project.namramuni.CustomView.CustomTextview
+                        android:id="@+id/newBold1"
+                        style="@style/TextStyle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_12sdp"
+                        android:text="Upcoming"
+                        android:textColor="@color/darkred"
+                        app:font1="@string/font4" />
+
+                    <project.namramuni.CustomView.CustomTextview
+                        android:id="@+id/newNormal1"
+                        style="@style/TextStyle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_toRightOf="@+id/newBold1"
+                        android:paddingTop="@dimen/_12sdp"
+                        android:text="Events"
+                        android:textColor="@color/darkred"
+                        app:font1="@string/font3" />
+
+                    <project.namramuni.CustomView.WrapContentViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/newBold1"></project.namramuni.CustomView.WrapContentViewPager>
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tabDots"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_93sdp"
+                        android:layout_above="@+id/bottomview"
+                        android:layout_alignParentBottom="true"
+                        android:tabStripEnabled="false"
+                        app:tabBackground="@drawable/tab_selector"
+                        app:tabGravity="center"
+                        app:tabIndicatorColor="@android:color/transparent"
+                        app:tabPaddingEnd="@dimen/_1sdp" />
+
+                    <RelativeLayout
+                        android:id="@+id/bottomview"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_39sdp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/transparent_smallstrip"
+                        android:backgroundTint="@color/heading0">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            android:id="@+id/subtitle"
+                            style="@style/homeText2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:padding="@dimen/_5sdp"
+                            android:text="Single line text view that scrolls automatically if the text is too long to fit in the widgetSingle line text view that scrolls automatically if the text is too long to fit in the widget"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15sdp">
+
+                    <project.namramuni.CustomView.CustomTextview
+                        android:id="@+id/newBold2"
+                        style="@style/TextStyle1"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_12sdp"
+                        android:text="LATEST"
+                        android:textColor="@color/darkred"
+                        app:font1="@string/font4" />
+
+                    <project.namramuni.CustomView.CustomTextview
+
+                        style="@style/TextStyle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_toRightOf="@+id/newBold2"
+                        android:paddingTop="@dimen/_12sdp"
+                        android:text="NEWS"
+                        android:textColor="@color/darkred"
+                        android:textSize="18dp"
+
+                        app:font1="@string/font5" />
+
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/pagerNews"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_180sdp"
+                        android:layout_below="@+id/newBold2" />
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tabDotsNews"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:tabStripEnabled="false"
+                        android:layout_marginTop="@dimen/_139sdp"
+                        app:tabBackground="@drawable/tab_selector"
+                        app:tabGravity="center"
+                        app:tabIndicatorColor="@android:color/transparent"
+                        app:tabPaddingEnd="@dimen/_1sdp" />
+
+                    <RelativeLayout
+                        android:id="@+id/bottomview1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_39sdp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/transparent_smallstrip"
+                        android:backgroundTint="@color/heading">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            android:id="@+id/subtitle1"
+                            style="@style/homeText2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:lines="2"
+
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:visibility="gone">
+
+                    <project.namramuni.CustomView.CustomTextview
+                        android:id="@+id/newBold"
+                        style="@style/TextStyle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_12sdp"
+                        android:text="Letest"
+                        android:textSize="18dp"
+                        android:textColor="@color/darkred"
+                        app:font1="@string/font4" />
+
+                    <project.namramuni.CustomView.CustomTextview
+                        android:id="@+id/newNormal"
+                        style="@style/TextStyle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_toRightOf="@+id/newBold"
+                        android:paddingTop="@dimen/_12sdp"
+                        android:text="NEWS"
+                        android:textColor="@color/darkred"
+                        app:font1="@string/font3" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_75sdp"
+                        android:layout_below="@+id/newBold"
+                        android:layout_marginBottom="@dimen/_10sdp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <project.namramuni.CustomView.CustomTextview
+                                android:id="@+id/newsTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:text="Paryushan Mahaparva"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp"
+                                app:font1="@string/font1" />
+
+                            <project.namramuni.CustomView.CustomTextview
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/newsTitle"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:includeFontPadding="false"
+                                android:lineSpacingExtra="@dimen/_2sdp"
+                                android:lines="2"
+                                android:text="As a Guru Purnima'marks the beginning of Chaturmas it is also that one... "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10sdp"
+                                app:font1="@string/font2" />
+
+                            <project.namramuni.CustomView.CustomTextview
+                                android:id="@+id/viewmore"
+                                style="@style/TabButtonTextStyle4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/gradient3"
+                                android:backgroundTint="@color/gray2"
+                                android:includeFontPadding="false"
+                                android:paddingLeft="@dimen/_6sdp"
+                                android:paddingTop="@dimen/_3sdp"
+                                android:paddingRight="@dimen/_6sdp"
+                                android:paddingBottom="@dimen/_3sdp"
+                                android:text="Read More"
+                                android:textSize="@dimen/_8sdp"
+                                app:font1="@string/font4" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_220sdp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            android:id="@+id/newBold3"
+                            android:textSize="18dp"
+                            style="@style/TextStyle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:paddingTop="@dimen/_12sdp"
+                            android:text="live"
+                            android:textColor="@color/darkred"
+                            app:font1="@string/font4" />
+
+                        <project.namramuni.CustomView.CustomTextview
+                            android:id="@+id/newNormal3"
+                            style="@style/TextStyle2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_toRightOf="@+id/newBold3"
+                            android:paddingTop="@dimen/_12sdp"
+                            android:text="Webcast"
+                            android:textSize="18dp"
+                            android:textColor="@color/darkred"
+                            app:font1="@string/font5" />
+
+                        <ImageView
+                            android:id="@+id/namranumiImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/newBold3"
+                            android:background="@color/gray2"
+                            android:scaleType="fitXY" />
+
+                        <project.namramuni.CustomView.CustomTextview
+                            android:id="@+id/liveMsg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/newBold3"
+                            android:gravity="center"
+
+                            android:text="Coming soon"
+                            android:textColor="@color/darkred"
+                            app:font1="@string/font4" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <project.namramuni.CustomView.CustomTextview
+                                android:id="@+id/newNormal4"
+                                style="@style/TextStyle1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/text_margin_10"
+
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:paddingTop="@dimen/_12sdp"
+                                android:text="shibir"
+                                android:textSize="18dp"
+                                android:textColor="@color/darkred"
+                                app:font1="@string/font5" />
+
+                            <androidx.viewpager.widget.ViewPager
+                                android:id="@+id/mohitViewpage"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/newNormal4"
+                                android:background="@color/heading0" />
+
+                            <com.google.android.material.tabs.TabLayout
+                                android:layout_width="match_parent"
+                                android:id="@+id/mohitshibir_tabdot"
+                                android:layout_height="@dimen/_5sdp"
+                                android:tabStripEnabled="false"
+                                android:layout_marginTop="@dimen/_101sdp"
+                                app:tabBackground="@drawable/tab_selector"
+                                app:tabGravity="center"
+
+                                app:tabIndicatorColor="@android:color/transparent"
+                                app:tabPaddingEnd="@dimen/_1sdp" />
+
+                            <project.namramuni.CustomView.CustomTextview
+                                android:id="@+id/shibirMsg"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/newNormal4"
+                                android:gravity="center"
+                                android:text="Coming soon"
+                                android:textColor="@color/darkred"
+                                android:textSize="@dimen/_10sdp"
+                                app:font1="@string/font4" />
+
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <project.namramuni.CustomView.CustomTextview
+                                android:id="@+id/newNormal5"
+                                style="@style/TextStyle1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/text_margin_10"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:paddingTop="@dimen/_12sdp"
+                                android:text="schedule"
+                                android:textSize="18dp"
+                                android:textColor="@color/darkred"
+                                app:font1="@string/font5" />
+
+                            <androidx.viewpager.widget.ViewPager
+                                android:id="@+id/scheduleViewpage"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/newNormal5"
+                                android:background="@color/heading" />
+
+                            <com.google.android.material.tabs.TabLayout
+                                android:layout_width="match_parent"
+                                android:id="@+id/mohitsedule_tabdot"
+                                android:layout_height="@dimen/_5sdp"
+                                android:tabStripEnabled="false"
+                                android:layout_marginTop="@dimen/_101sdp"
+                                app:tabBackground="@drawable/tab_selector"
+                                app:tabGravity="center"
+                                app:tabIndicatorColor="@android:color/transparent"
+                                app:tabPaddingEnd="@dimen/_1sdp" />
+
+                            <project.namramuni.CustomView.CustomTextview
+                                android:id="@+id/sheduleMsg"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/newNormal5"
+                                android:gravity="center"
+                                android:text="Coming soon"
+                                android:textColor="@color/heading0"
+                                android:textSize="@dimen/_10sdp"
+                                app:font1="@string/font4" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lnrLiveVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_180sdp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/namranumiImage1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_35sdp"
+                        android:background="@color/gray2"
+                        android:scaleType="fitXY" />
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_210sdp"
+                        android:layout_height="fill_parent"
+                        android:layout_centerHorizontal="true">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_8sdp"
+                                app:cardCornerRadius="@dimen/_5sdp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <LinearLayout
+                                        android:layout_width="@dimen/_2sdp"
+                                        android:layout_height="@dimen/_20sdp"
+                                        android:layout_marginTop="@dimen/_10sdp"
+                                        android:background="@color/colorPrimary"
+                                        android:visibility="gone"></LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginBottom="@dimen/_5sdp"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="@dimen/_20sdp"
+                                        android:paddingTop="@dimen/_10sdp"
+                                        android:paddingRight="@dimen/_15sdp"
+                                        android:paddingBottom="@dimen/_5sdp">
+
+                                        <project.namramuni.CustomView.CustomTextview
+                                            android:id="@+id/titleLive"
+                                            style="@style/homeText1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginBottom="@dimen/_2sdp"
+                                            android:singleLine="true"
+                                            android:text="Live webcast." />
+
+                                        <project.namramuni.CustomView.CustomTextview
+                                            android:id="@+id/txttime"
+                                            style="@style/homeText2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/titleLive"
+                                            android:layout_marginBottom="@dimen/_10sdp"
+                                            android:includeFontPadding="false"
+                                            android:text="7:00 a.m. to 9 p.m  " />
+                                    </LinearLayout>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:background="@drawable/gradient3">
+
+                            <project.namramuni.CustomView.CustomTextview
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:lineSpacingExtra="@dimen/_2sdp"
+                                android:paddingLeft="@dimen/_6sdp"
+                                android:paddingTop="@dimen/_4sdp"
+                                android:paddingRight="@dimen/_6sdp"
+                                android:paddingBottom="@dimen/_3sdp"
+                                android:text="Play Now"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_9sdp"
+                                app:font1="@string/font1" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@color/heading0"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            android:id="@+id/videoBold"
+                            style="@style/TextStyle1"
+                            android:textSize="18dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:paddingTop="@dimen/_12sdp"
+                            android:text="Recent"
+                            app:font1="@string/font4" />
+
+                        <project.namramuni.CustomView.CustomTextview
+                            android:textSize="18dp"
+                            style="@style/TextStyle2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_toRightOf="@+id/videoBold"
+                            android:paddingTop="@dimen/_12sdp"
+                            android:text="Uploads"
+                            app:font1="@string/font5" />
+
+
+
+
+
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:id="@+id/mohitrecntRecycle"
+                        android:layout_height="@dimen/_130sdp"
+                        android:layout_marginBottom="@dimen/_10sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+
+                    android:background="@color/gray2"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            android:id="@+id/videoBold"
+                            style="@style/TextStyle1"
+                            android:textSize="18dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:paddingTop="@dimen/_12sdp"
+                            android:textColor="@color/heading"
+                            android:text="Video"
+                            app:font1="@string/font4" />
+
+                        <project.namramuni.CustomView.CustomTextview
+                            android:id="@+id/videoNormal"
+                            style="@style/TextStyle2"
+                            android:textSize="18dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_toRightOf="@+id/videoBold"
+                            android:paddingTop="@dimen/_12sdp"
+                            android:textColor="@color/heading"
+                            android:text="Playlists"
+                            app:font1="@string/font5" />
+
+
+
+<!--                        <project.namramuni.CustomView.CustomTextview-->
+<!--                            android:textSize="18dp"-->
+<!--                            style="@style/TextStyle2"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:layout_marginLeft="@dimen/_5sdp"-->
+<!--                            android:layout_toRightOf="@+id/videoBold"-->
+<!--                            android:paddingTop="@dimen/_12sdp"-->
+<!--                            android:text="Video"-->
+<!--                            app:font1="@string/font5" />-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="@dimen/_40sdp"-->
+<!--                            android:layout_height="@dimen/_18sdp"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            android:layout_alignParentBottom="true"-->
+<!--                            android:layout_marginRight="@dimen/_10sdp"-->
+<!--                            android:layout_marginBottom="@dimen/_5sdp"-->
+<!--                            android:alpha="0.3"-->
+<!--                            android:background="@drawable/read2"-->
+<!--                            android:backgroundTint="#220821"-->
+<!--                            android:gravity="center" />-->
+
+
+
+                        <project.namramuni.CustomView.CustomTextview
+                            android:id="@+id/viewAllVideo"
+                            style="@style/TabButtonTextStyle4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:background="@drawable/read2"
+                            android:backgroundTint="@color/heading"
+                            android:paddingLeft="@dimen/_8sdp"
+                            android:paddingTop="@dimen/_4sdp"
+                            android:paddingRight="@dimen/_8sdp"
+                            android:paddingBottom="@dimen/_4sdp"
+                            android:text="View All"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_8sdp"
+                            app:font1="@string/font4" />
+
+<!--                        <project.namramuni.CustomView.CustomTextview-->
+<!--                            android:id="@+id/viewAllVideo"-->
+<!--                            style="@style/TabButtonTextStyle4"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="@dimen/_18sdp"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            android:layout_alignParentBottom="true"-->
+<!--                            android:layout_marginRight="@dimen/_10sdp"-->
+<!--                            android:layout_marginBottom="@dimen/_5sdp"-->
+<!--                            android:gravity="center"-->
+<!--                            android:paddingLeft="@dimen/_7sdp"-->
+<!--                            android:paddingTop="@dimen/_3sdp"-->
+<!--                            android:paddingRight="@dimen/_7sdp"-->
+<!--                            android:paddingBottom="@dimen/_3sdp"-->
+<!--                            android:includeFontPadding="false"-->
+<!--                            android:text="View All"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:textSize="@dimen/_8sdp"-->
+<!--                            app:font1="@string/font4" />-->
+
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcList1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_130sdp"
+                        android:layout_marginBottom="@dimen/_10sdp" />
+                </LinearLayout>
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@color/gray2"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_10sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            android:id="@+id/audioBold"
+                            style="@style/TextStyle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:paddingTop="@dimen/_12sdp"
+                            android:text="Audio"
+                            android:textColor="@color/darkred"
+                            app:font1="@string/font4" />
+
+                        <project.namramuni.CustomView.CustomTextview
+                            android:id="@+id/audioNormal"
+                            style="@style/TextStyle2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_toRightOf="@+id/audioBold"
+                            android:paddingTop="@dimen/_12sdp"
+                            android:text="Playlists"
+                            android:textColor="@color/darkred"
+                            app:font1="@string/font3" />
+
+                        <project.namramuni.CustomView.CustomTextview
+                            android:id="@+id/viewAllAudio"
+                            style="@style/TabButtonTextStyle4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:background="@drawable/read2"
+                            android:backgroundTint="@color/darkred"
+                            android:includeFontPadding="false"
+                            android:paddingLeft="@dimen/_8sdp"
+                            android:paddingTop="@dimen/_4sdp"
+                            android:paddingRight="@dimen/_8sdp"
+                            android:paddingBottom="@dimen/_4sdp"
+                            android:text="View All"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_8sdp"
+                            app:font1="@string/font4" />
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcList2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_145sdp"></androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:orientation="vertical">
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/songsBackround"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="@dimen/_150sdp"-->
+<!--                        android:background="@color/gray2"-->
+<!--                        android:scaleType="fitXY" />-->
+
+                    <com.jgabrielfreitas.core.BlurImageView
+                        android:id="@+id/songsBackround"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_alignParentTop="true"
+                        android:alpha="0.5"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/transparent"
+                        android:src="@drawable/background"
+                        android:scaleType="fitXY"
+                         />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_15sdp">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            android:id="@+id/bhaktiBold"
+                            style="@style/TextStyle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="Bhakti"
+                            android:textSize="18dp"
+                            android:textColor="@color/white"
+                            app:font1="@string/font4"/>
+
+                        <project.namramuni.CustomView.CustomTextview
+                            android:id="@+id/bhaktiNormal"
+                            style="@style/TextStyle2"
+                            android:text="SONGS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_toRightOf="@+id/bhaktiBold"
+                            android:textSize="18dp"
+                            android:textColor="@color/white"
+                            app:font1="@string/font5"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:alpha="0.6"
+                            android:background="@drawable/read2"
+                            android:backgroundTint="#220821"
+                            android:gravity="center" />
+
+                        <project.namramuni.CustomView.CustomTextview
+                            android:id="@+id/viewAllSongs"
+                            style="@style/TabButtonTextStyle4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/_7sdp"
+                            android:paddingTop="@dimen/_3sdp"
+                            android:paddingRight="@dimen/_7sdp"
+                            android:paddingBottom="@dimen/_3sdp"
+                            android:text="View All"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_8sdp"
+                            app:font1="@string/font4" />
+                    </RelativeLayout>
+
+                    <com.yarolegovich.discretescrollview.DiscreteScrollView
+                        android:id="@+id/rcList3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:background="@color/heading"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_15sdp">
+
+                        <project.namramuni.CustomView.CustomTextview
+                            android:id="@+id/artipubBold"
+                            style="@style/TextStyle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="Articles "
+                            android:textSize="18dp"
+                            app:font1="@string/font4" />
+
+                        <project.namramuni.CustomView.CustomTextview
+                            android:id="@+id/artipubNormal"
+                            style="@style/TextStyle2"
+                            android:textSize="18dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_toRightOf="@+id/artipubBold"
+                            android:text="| Publications"
+                            app:font1="@string/font5" />
+
+                        <project.namramuni.CustomView.CustomTextview
+                            android:id="@+id/viewAllArticles"
+                            style="@style/TabButtonTextStyle4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:background="@drawable/read2"
+                            android:backgroundTint="#C14044"
+                            android:paddingLeft="@dimen/_8sdp"
+                            android:paddingTop="@dimen/_4sdp"
+                            android:paddingRight="@dimen/_8sdp"
+                            android:paddingBottom="@dimen/_4sdp"
+                            android:text="View All"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_8sdp"
+                            app:font1="@string/font4" />
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcList4"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdp"></androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

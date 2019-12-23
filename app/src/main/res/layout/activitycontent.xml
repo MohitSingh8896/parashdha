@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/lnr4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="horizontal"
+        android:visibility="visible">
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            android:padding="@dimen/_120sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <RelativeLayout
+            android:id="@+id/subrlv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/activityset"></include>
+            </ScrollView>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/subrlv2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+                <include layout="@layout/activityset1"></include>
+
+            </ScrollView>
+        </RelativeLayout>
+
+
+
+        <ImageView
+            android:id="@+id/imgclose1"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_12sdp"
+            android:src="@drawable/ic_reply_all_button"
+            android:tint="@color/heading1" />
+    </RelativeLayout>
+
+</RelativeLayout>

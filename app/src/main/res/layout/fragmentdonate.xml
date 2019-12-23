@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundsource"
+    android:orientation="vertical">
+
+    <project.namramuni.CustomView.CustomButton
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/heading"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="@dimen/_2sdp"
+        android:text="Donate"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold"
+        app:font1="@string/font1" />
+
+    <include layout="@layout/loading"></include>
+    <project.namramuni.CustomView.CustomTextview
+        android:id="@+id/txtNoData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="No Donate"
+        android:includeFontPadding="false"
+        android:textColor="@color/heading"
+        android:textSize="@dimen/_15sdp"
+        app:font1="@string/font1" />
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcListDonate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"></androidx.recyclerview.widget.RecyclerView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+                    <project.namramuni.CustomView.CustomTextview
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:includeFontPadding="false"
+                        android:text="Enter Your Amount *"
+                        android:textColor="@color/heading1"
+                        android:textSize="@dimen/_9sdp"
+                        app:font1="@string/font1" />
+
+                    <project.namramuni.CustomView.CustomTextview
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:includeFontPadding="false"
+                        android:text="PAN Number"
+                        android:textColor="@color/heading1"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold"
+                        app:font1="@string/font1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:backgroundTint="@color/gray2"
+                        android:background="@drawable/border1"
+                        android:id="@+id/spinner"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_30sdp"></Spinner>
+
+                    <project.namramuni.CustomView.CustomEditview
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_weight="1.4"
+                        android:background="@drawable/whiteborder"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:gravity="center_vertical"
+                        android:includeFontPadding="false"
+                        android:inputType="number"
+                        android:lineSpacingExtra="@dimen/_2sdp"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/heading1"
+                        android:textSize="@dimen/_11sdp"
+                        app:font1="@string/font1" />
+
+                    <project.namramuni.CustomView.CustomEditview
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/whiteborder"
+                        android:gravity="center_vertical"
+                        android:includeFontPadding="false"
+                        android:inputType="textMultiLine"
+                        android:lineSpacingExtra="@dimen/_2sdp"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/heading1"
+                        android:textSize="@dimen/_11sdp"
+                        app:font1="@string/font1" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <project.namramuni.CustomView.CustomTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="@dimen/_2sdp"
+                        android:text="Donate on someone else's behalf"
+                        android:textColor="@color/heading1"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold"
+                        app:font1="@string/font1" />
+
+                    <Switch
+                        android:id="@+id/switcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_15sdp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/lnrDonorName"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <project.namramuni.CustomView.CustomTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="@dimen/_2sdp"
+                        android:text="Donor's Name"
+                        android:textColor="@color/heading1"
+                        android:textSize="@dimen/_9sdp"
+                        android:textStyle="bold"
+                        app:font1="@string/font1" />
+
+                    <project.namramuni.CustomView.CustomEditview
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:background="@drawable/whiteborder"
+                        android:gravity="center_vertical"
+                        android:includeFontPadding="false"
+                        android:inputType="textMultiLine"
+                        android:lineSpacingExtra="@dimen/_2sdp"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/heading1"
+                        android:textSize="@dimen/_11sdp"
+                        app:font1="@string/font1" />
+                </LinearLayout>
+
+                <project.namramuni.CustomView.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:includeFontPadding="false"
+                    android:text="Remark"
+                    android:textColor="@color/heading1"
+                    android:textSize="@dimen/_9sdp"
+                    android:textStyle="bold"
+                    app:font1="@string/font1" />
+
+                <project.namramuni.CustomView.CustomEditview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:background="@drawable/whiteborder"
+                    android:gravity="top"
+                    android:includeFontPadding="false"
+                    android:inputType="textMultiLine"
+                    android:lineSpacingExtra="@dimen/_2sdp"
+                    android:lines="3"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/heading1"
+                    android:textSize="@dimen/_11sdp"
+                    app:font1="@string/font1" />
+
+                <project.namramuni.CustomView.CustomButton
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/read1"
+                    android:includeFontPadding="false"
+                    android:text="Donate"
+                    android:textColor="@color/white"
+                    app:font1="@string/font1" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</LinearLayout>

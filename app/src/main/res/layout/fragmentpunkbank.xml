@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundsource">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/a1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/lnr1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_margin="@dimen/_7sdp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:id="@+id/rlvSamayik"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/punyabank"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgSamayik"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_centerHorizontal="true"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/ic_samayikpratikraman"
+                        android:tint="@color/white" />
+
+                    <project.namramuni.CustomView.CustomTextview
+                        android:id="@+id/txtSamayik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:includeFontPadding="false"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Samayik"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp"
+                        app:font1="@string/font1" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlvPratikraman"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/read2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgPratikraman"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_centerHorizontal="true"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/ic_samayikpratikraman"
+                        android:tint="@color/heading" />
+
+                    <project.namramuni.CustomView.CustomTextview
+                        android:id="@+id/txtPratikraman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Pratikraman"
+                        android:textColor="@color/heading"
+                        android:textSize="@dimen/_10sdp"
+                        app:font1="@string/font1" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnr2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_margin="@dimen/_7sdp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="4">
+
+                <RelativeLayout
+                    android:id="@+id/rlvMeditation"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/punyabank"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_2sdp">
+
+                    <ImageView
+                        android:id="@+id/imgMeditation"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_centerHorizontal="true"
+                        android:padding="@dimen/_7sdp"
+                        android:src="@drawable/ic_meditation"
+                        android:tint="@color/white" />
+
+                    <project.namramuni.CustomView.CustomTextview
+                        android:id="@+id/txtMeditation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:includeFontPadding="false"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="Meditation"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_9sdp"
+                        app:font1="@string/font1" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlvMantra"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_7sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/read2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgMantra"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_centerHorizontal="true"
+                        android:padding="@dimen/_8sdp"
+                        android:src="@drawable/ic_mantra"
+                        android:tint="@color/heading" />
+
+                    <project.namramuni.CustomView.CustomTextview
+                        android:id="@+id/txtMantra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Mantra"
+                        android:textColor="@color/heading"
+                        android:textSize="@dimen/_9sdp"
+                        app:font1="@string/font1" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlvPrathana"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/read2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgPrathana"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:src="@drawable/ic_prarthana"
+                        android:layout_centerHorizontal="true"
+                        android:padding="@dimen/_8sdp"
+                        android:tint="@color/heading" />
+
+                    <project.namramuni.CustomView.CustomTextview
+                        android:id="@+id/txtPrathana"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:padding="@dimen/_5sdp"
+                        android:text="Prathana"
+                        android:textColor="@color/heading"
+                        android:textSize="@dimen/_9sdp"
+                        app:font1="@string/font1" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlvBhaktiSongs"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/read2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgBhaktiSongs"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_centerHorizontal="true"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/ic_bhakti_songs"
+                        android:tint="@color/heading" />
+
+                    <project.namramuni.CustomView.CustomTextview
+                        android:id="@+id/txtBhaktiSongs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="Bhakti Songs"
+                        android:textColor="@color/heading"
+                        android:textSize="@dimen/_9sdp"
+                        app:font1="@string/font1" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/loading"></include>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/a1"
+            android:id="@+id/relative"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <project.namramuni.CustomView.CustomTextview
+                android:id="@+id/a"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:includeFontPadding="false"
+                android:padding="@dimen/_10sdp"
+                android:text="Task for the following week"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                app:font1="@string/font1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcGurudevList"
+                android:layout_below="@+id/a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+    </RelativeLayout>
+    <include layout="@layout/pdfviewer"></include>
+
+</RelativeLayout>

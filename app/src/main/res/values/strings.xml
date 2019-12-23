@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name1" translatable="false">Subscription</string>
+    <string name="app_name" translatable="false">Namramuni</string>
+    <string name="action_settings" translatable="false" tools:ignore="ExtraTranslation">Settings</string>
+    <string name="title_activity_sign_in" translatable="false">SignInActivity</string>
+    <string name="login_screen_email_id_hint" translatable="false">Email Id</string>
+    <string name="login_screen_password_hint" translatable="false">Password</string>
+    <string name="login_screen_forgot_password_label" translatable="false">Forgot password?</string>
+    <string name="login_screen_forgot_password_label1" translatable="false">Forgot password</string>
+    <string name="login_screen_option_label" translatable="false">Or Login with</string>
+    <string name="login_screen_mobile_label" translatable="false">MOBILE</string>
+    <string name="login_screen_facebook_label" translatable="false">FACEBOOK</string>
+    <string name="login_screen_google_label" translatable="false">GOOGLE</string>
+    <string name="title_activity_subscription" translatable="false">SubscriptionActivity</string>
+    <string name="subscription_screen_email_id_hint" translatable="false">Email Id</string>
+    <string name="subscription_screen_label_1" translatable="false">Choose Your Favourite</string>
+    <string name="subscription_screen_label_2" translatable="false">Choose Your Plan</string>
+    <string name="subscription_screen_label_3" translatable="false">Choose User</string>
+    <string name="subscription_screen_promo_text" translatable="false">Do you have a promo code?</string>
+    <string name="subscription_screen_promo_btn_label" translatable="false">CHECK</string>
+    <string name="subscription_screen_label_4" translatable="false">Amount due is </string>
+    <string name="subscription_screen_label_5" translatable="false"> </string>
+    <string name="title_activity_subscription_gift" translatable="false">SubscriptionGiftActivity</string>
+    <string name="title_activity_subscription_history" translatable="false">SubscriptionHistoryActivity</string>
+    <string name="submitText" translatable="false">&lt;u>Click here&lt;/u></string>
+    <string name="email_address_empty" translatable="false">Enter Email Address</string>
+    <string name="password_empty" translatable="false">Enter Password</string>
+    <string name="welcome_user" translatable="false">Welcome, %1$s!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="subscription_hist_screen_label_1" translatable="false">Plan Name</string>
+    <string name="subscription_hist_screen_label_2" translatable="false"><![CDATA[Audio and Video (]]></string>
+    <string name="subscription_hist_screen_label_3" translatable="false">Time</string>
+    <string name="subscription_hist_screen_label_4" translatable="false">1 Month</string>
+    <string name="subscription_hist_screen_label_5" translatable="false">Purchase On</string>
+    <string name="subscription_hist_screen_label_15" translatable="false">Valid from</string>
+    <string name="subscription_hist_screen_label_6" translatable="false">5th July 2018</string>
+    <string name="subscription_hist_screen_label_7" translatable="false">Amount</string>
+    <string name="subscription_hist_screen_label_8" translatable="false">99</string>
+    <string name="subscription_hist_screen_label_9" translatable="false">Expiry</string>
+    <string name="subscription_hist_screen_label_19" translatable="false">Valid to</string>
+    <string name="subscription_hist_screen_label_10" translatable="false">4th Aug 2018</string>
+    <string name="add_on_registration_screen_label_1" translatable="false">You (Primary User)</string>
+    <string name="add_on_registration_screen_label_2" translatable="false">Add on user1</string>
+    <string name="add_on_registration_screen_label_3" translatable="false">(Temporary Password: abcd123)</string>
+    <string name="add_on_registration_screen_etxt_1_hint" translatable="false">+919820198201</string>
+    <string name="add_on_registration_screen_etxt_2_hint" translatable="false">+12372371234</string>
+    <string name="add_on_registration_hint" translatable="false">Enter country code + phone number</string>
+    <string name="runtime_permissions_txt" translatable="false">accept all permissions</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="view_profile_screen_etxt_user_name_hint" translatable="false">Enter your name</string>
+    <string name="view_profile_screen_etxt_user_email_hint" translatable="false">Enter your Email</string>
+    <string name="view_profile_screen_etxt_user_mobile_hint" translatable="false">Enter your Mobile number</string>
+    <string name="view_profile_screen_etxt_user_age_hint" translatable="false">Enter your age</string>
+    <string name="login_screen_login_btn_label" translatable="false">Login</string>
+    <string name="view_profile_screen_btn_save_label" translatable="false">Save</string>
+    <string name="view_profile_screen_radio_btn_1_label" translatable="false">Male</string>
+    <string name="view_profile_screen_radio_btn_2_label" translatable="false">Female</string>
+    <string name="browse_screen_live_stream_text_label" translatable="false">VIEW LIVE STREAM</string>
+    <string name="event_year_screen_txt_event_year_label" translatable="false">2018</string>
+    <string name="year_album_screen_txt_album_label" translatable="false">Best Of Shankar Mahadevan</string>
+    <string name="favourite_artist_screen_txt_artist_label" translatable="false">Jagjit Singh</string>
+    <string name="song_album_screen_txt_album_label" translatable="false">2016 • Ganesh Aarti Album</string>
+    <string name="song_album_screen_txt_song_label" translatable="false">Om Namo Shivay</string>
+    <string name="song_album_screen_txt_song_length_label" translatable="false">4:08</string>
+    <string name="song_album_screen_txt_artist_label" translatable="false">Shankar Mahadevan</string>
+    <string name="song_album_screen_txt_play_all_label" translatable="false">Play All</string>
+    <string name="queue_screen_txt_song_label" translatable="false">Om Namo Shivay</string>
+    <string name="view_profile_screen_btn_otp_label" translatable="false">Verify OTP</string>
+    <string name="view_profile_screen_etxt_user_otp_hint" translatable="false">Enter OTP</string>
+
+
+    <string name="upcoming_event_detail_screen_day_label" translatable="false">Gurupoornima - Day1</string>
+    <string name="upcoming_event_detail_screen_description_label" translatable="false">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing. Time: 7:00 am to 4:00 pm</string>
+    <string name="upcoming_event_detail_screen_date_label" translatable="false">01st Aug,2018</string>
+
+
+    <string name="video_album_screen_txt_song_label" translatable="false">2016 • Non Stop Krishna Bhajans</string>
+    <string name="video_album_screen_txt_artist_name_label" translatable="false">Shankar Mahadevan</string>
+    <string name="video_album_detail_screen_txt_song_label" translatable="false">2016 • Non Stop Krishna Bhajans</string>
+    <string name="video_album_detail_screen_txt_artist_label" translatable="false">Shankar Mahadevan</string>
+
+
+    <!--Signup-->
+    <string name="txtsignup" translatable="false">Signup</string>
+    <!--Signin-->
+    <string name="txtsignin" translatable="false">Signin</string>
+    <string name="internate_check" translatable="false">Please check your internet connection</string>
+    <string name="facebook_app_id" translatable="false">2744220925802508</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb2744220925802508</string>
+    <string name="txtcurrentpass" translatable="false">Current Password</string>
+    <string name="txtnewpassword" translatable="false">New Password</string>
+    <string name="txtconfirmpass" translatable="false">Confirm Password</string>
+    <string name="txtbtnsubmit" translatable="false">Submit</string>
+    <string name="login_screen_email_label" translatable="false">Email</string>
+    <string name="title_activity_otpverification_a" translatable="false">OTPVerificationAActivity</string>
+    <string name="title_activity_subscribe_new" translatable="false">SubscribeNew</string>
+    <!--notification bar strings-->
+    <string name="app_version_number" translatable="false">1.0</string>
+    <string name="menu_settings" translatable="false">Settings</string>
+    <string name="cd_repeat" translatable="false">Repeat one or all</string>
+    <string name="cd_previous" translatable="false">Skip backwards</string>
+    <string name="cd_play" translatable="false">Play</string>
+    <string name="cd_pause" translatable="false">pause</string>
+    <string name="cd_next" translatable="false">Skip forwards</string>
+    <string name="thisLink" translatable="false">https://aura.bspmpl.com/user/email_signup</string>
+
+
+    <!--<string name="font1" translatable="false">cambria/FedraSerifPro A Bold.otf</string>-->
+    <string name="font1" translatable="false">cambria/FedraSerifPro A Medium.otf</string>
+    <string name="font2" translatable="false">cambria/FedraSerifPro A Book.otf</string>
+    <!--<string name="font1" translatable="false">roboto/Roboto-Medium.ttf</string>-->
+    <!--<string name="font2" translatable="false">roboto/Roboto-Thin.ttf</string>-->
+    <string name="font3" translatable="false">roboto/Roboto-Thin.ttf</string>
+    <string name="font4" translatable="false">roboto/Roboto-Medium.ttf</string>
+    <string name="font5" translatable="false">roboto/roboto.light-italic.ttf</string>
+
+    <string name="pref_key_transition_time" translatable="false">pref_key_transition_time</string>
+
+
+    <string-array name="video_id_array">
+        <item>L0DMT3o_Io8</item>
+        <item>O4Niw1lgKsY</item>
+        <item>8BE_85pD9Kg</item>
+        <item>u9SQlrH-mug</item>
+        <item>hZhKvG19SS0</item>
+    </string-array>
+    <string-array name="title_id_array">
+        <item>Refresh get an Aura Bath | Yuva Sanskar Shibir 2018 | Rashtrasant Pujya Gurudev Shree Namramuni M.S</item>
+        <item>Manglik | Rashtrasant Pujya Gurudev Shree Namramuni Maharaj Saheb</item>
+        <item>Bhagwan Mahavirs Journey | Rashtrasant Pujya Gurudev Shree Namramuni Maharaj Saheb</item>
+        <item>Manglik - Yug Diwakar Pujya Gurudev Shree Namramuni Maharaj Saheb</item>
+        <item>Shree Uvasaggaharam Stotra (Subtitles: Hindi and English) | Pujya Gurudev Shree Namramuni M.S.</item>
+    </string-array>
+    <string-array name="time_id_array">
+        <item>March 15, 2019</item>
+        <item>March 08, 2019</item>
+        <item>March 05, 2019</item>
+        <item>December 01, 2019</item>
+        <item>November 25, 2019</item>
+    </string-array>
+    <string-array name="suggestion">
+        <item>Apple</item>
+        <item>Apricot</item>
+        <item>Avocado</item>
+        <item>Banana</item>
+        <item>Blueberry</item>
+        <item>Blackberry</item>
+        <item>Carrot</item>
+        <item>Cherry</item>
+        <item>Orange</item>
+        <item>Potato</item>
+        <item>Peach</item>
+        <item>Passion fruit</item>
+        <item>Pear</item>
+        <item>Strawberry</item>
+    </string-array>
+    <string name="bullted_list" translatable="false">
+           <li>Shibirites will have to reach the shibir venue by 14.07.2019 before 6:00pm &amp; can leave on 18.07.2019 morning.</li>
+        \n <li>Dress code - White decent outfit.</li>
+        \n <li>I-Card is a must to attend the shibir.</li>
+        \n <li>Seperate form is required for each member of the family.</li>
+        \n <li>Xerox copy will be considered.</li>
+    </string>
+    <string name="vanus" translatable="false">Parasdham, 122a, Bakul Bagan Row, Nr. Landsdown Market, Kolkata, West Bengal\n\nFor more information contact : +91 6289 776 960</string>
+    <string name="seeall" tools:ignore="MissingTranslation"><u>See All</u></string>
+
+    <string name="introcontect" translatable="false">
+           Every day,irrespective of your physical location.the period form 6.20 to 6.30 PM (Your local time) is an
+           opportunity to experience Sadhguru s presence and establish a special concat.
+    </string>
+
+
+</resources>

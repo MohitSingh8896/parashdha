@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card1="http://schemas.android.com/tools"
+    android:id="@+id/root_container"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_135sdp"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_3sdp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_3sdp"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:background="@color/grey"
+                android:id="@+id/pagerImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+            <ImageView
+                android:visibility="gone"
+                android:alpha="0.5"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/round" />
+            <ImageView
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/ic_play" />
+
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:alpha="0.5"
+                android:background="@drawable/bgshap1"
+                android:text="10"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_7sdp" />
+
+            <project.namramuni.CustomView.CustomTextview
+                android:id="@+id/timeDuration"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:includeFontPadding="false"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9sdp"
+                app:font1="@string/font1" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview1"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_1sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+        <project.namramuni.CustomView.CustomTextview
+            android:id="@+id/txtTitle"
+            style="@style/homeText"
+            android:gravity="center"
+            android:maxLines="2"
+            android:lines="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

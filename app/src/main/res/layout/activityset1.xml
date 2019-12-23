@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/_20sdp">
+
+    <project.namramuni.CustomView.CustomButton
+        app:font1="@string/font1"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:background="@drawable/read1"
+        android:paddingLeft="@dimen/_30sdp"
+        android:includeFontPadding="false"
+        android:paddingRight="@dimen/_30sdp"
+        android:text="Individual Score"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp"
+      />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+
+
+
+        <project.namramuni.CustomView.CustomTextview
+            android:includeFontPadding="false"
+            app:font1="@string/font1"
+            android:textColor="@color/heading1"
+
+            android:textSize="@dimen/_13sdp"
+            android:text="Rank"
+            android:textStyle="bold"
+            android:id="@+id/txtrankind"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content" />
+
+        <project.namramuni.CustomView.CustomTextview
+            android:includeFontPadding="false"
+            app:font1="@string/font1"
+            android:layout_toEndOf="@+id/txtrankind"
+            android:textColor="@color/heading1"
+
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            android:text="Name"
+            android:id="@+id/txtname1"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <project.namramuni.CustomView.CustomTextview
+            android:includeFontPadding="false"
+            app:font1="@string/font1"
+            android:textColor="@color/heading1"
+
+            android:textSize="@dimen/_13sdp"
+            android:layout_alignParentRight="true"
+            android:text="Point"
+            android:textStyle="bold"
+            android:id="@+id/txtpoint1"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcIndividualList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_marginBottom="@dimen/_10sdp" />
+
+    <project.namramuni.CustomView.CustomButton
+        app:font1="@string/font1"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:background="@drawable/read1"
+        android:paddingLeft="@dimen/_30sdp"
+        android:includeFontPadding="false"
+        android:paddingRight="@dimen/_30sdp"
+        android:text="Group Score"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <project.namramuni.CustomView.CustomTextview
+            android:includeFontPadding="false"
+            app:font1="@string/font1"
+            android:textColor="@color/heading1"
+
+            android:textSize="@dimen/_13sdp"
+            android:text="Rank"
+            android:id="@+id/txtrank"
+            android:layout_centerVertical="true"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content" />
+
+        <project.namramuni.CustomView.CustomTextview
+            android:includeFontPadding="false"
+            app:font1="@string/font1"
+            android:layout_toEndOf="@+id/txtrank"
+            android:textColor="@color/heading1"
+            android:padding="@dimen/_8sdp"
+            android:textSize="@dimen/_13sdp"
+            android:text="Name"
+            android:id="@+id/txtname"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <project.namramuni.CustomView.CustomTextview
+            android:includeFontPadding="false"
+            app:font1="@string/font1"
+            android:textColor="@color/heading1"
+
+            android:textSize="@dimen/_13sdp"
+            android:layout_alignParentRight="true"
+            android:text="Point"
+            android:id="@+id/txtpoint"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcGroupList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_marginBottom="@dimen/_10sdp" />
+</LinearLayout>
